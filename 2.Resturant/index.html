@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ember & Oak — Don't Wait, Taste The Best</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="logo">Abdullah<span>&Up</span></a>
+    <nav class="nav-links">
+      <a href="#">Menu</a>
+      <a href="#">About</a>
+      <a href="#">Reservations</a>
+    </nav>
+    <div class="nav-search"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search a dish..."></div>
+    <div class="hamburger-wrap">
+      <button class="hamburger-btn" id="hamBtn"><i class="fa-solid fa-bars"></i></button>
+      <div class="ham-dropdown" id="hamDropdown">
+        <a href="#">Order Online</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <small>Are You Hungry?</small>
+      <h1>Don't Wait,<br>Taste The Best</h1>
+      <p>Slow-cooked, fire-finished plates made fresh every evening — comfort food with a little bit of craft behind it.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
+        <a href="#" class="btn btn-dark"><i class="fa-solid fa-phone"></i> Contact Us</a>
+      </div>
+      <div class="thumb-row">
+        <img src="1.jpg" alt="Burger dish thumbnail">
+        <img src="3.jpg" alt="Pizza dish thumbnail">
+        <img src="4.jpg" alt="Pasta dish thumbnail">
+        <img src="5.jpg" alt="Salad dish thumbnail">
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img class="hero-food" src="2.jpg" alt="Signature restaurant dish">
+      <div class="hero-socials">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title reveal">Core <span style="color:var(--rust);">Features</span></h2>
+    <p class="section-sub reveal">A few reasons regulars keep coming back.</p>
+    <div class="feat-grid reveal">
+      <div class="feat-card"><i class="fa-solid fa-fire-burner"></i><h4>Best Quality Food</h4></div>
+      <div class="feat-card"><i class="fa-solid fa-clock"></i><h4>24/7 On Hotel</h4></div>
+      <div class="feat-card"><i class="fa-solid fa-mobile-screen"></i><h4>Easy To Order</h4></div>
+      <div class="feat-card"><i class="fa-solid fa-truck-fast"></i><h4>Free Delivery</h4></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--grey);">
+  <div class="container">
+    <h2 class="section-title reveal">Today's <span style="color:var(--rust);">Discounts</span></h2>
+    <p class="section-sub reveal">Limited-time offers, refreshed weekly.</p>
+    <div class="discount-wrap reveal" id="discountWrap">
+      <div class="discount-card"><img src="6.jpg" alt="Discounted burger"><div><div class="discount-tag">20% off Special Burger</div><a href="#" class="discount-order">Order Now</a></div></div>
+      <div class="discount-card"><img src="7.jpg" alt="Discounted pizza"><div><div class="discount-tag">20% off Wood-Fired Pizza</div><a href="#" class="discount-order">Order Now</a></div></div>
+      <div class="discount-card extra-discount"><img src="8.jpg" alt="Discounted pasta"><div><div class="discount-tag">15% off Creamy Pasta</div><a href="#" class="discount-order">Order Now</a></div></div>
+      <div class="discount-card extra-discount"><img src="9.jpg" alt="Discounted salad"><div><div class="discount-tag">10% off Garden Salad</div><a href="#" class="discount-order">Order Now</a></div></div>
+    </div>
+    <div class="see-more-wrap">
+      <button class="btn btn-dark" id="discountSeeMore"><i class="fa-solid fa-chevron-down"></i> See More</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title reveal">Special <span style="color:var(--rust);">Dishes</span></h2>
+    <p class="section-sub reveal">Chef's picks, plated the way they should be.</p>
+    <div class="dish-grid reveal" id="dishGrid">
+      <div class="dish-card"><img src="1.jpg" alt="Dish 1"><h4>Smoked Brisket Bowl</h4><a href="#" class="btn btn-dark" style="padding:8px 18px;font-size:.78rem;">Order Now</a></div>
+      <div class="dish-card"><img src="3.jpg" alt="Dish 2"><h4>Charred Noodle Bowl</h4><a href="#" class="btn btn-dark" style="padding:8px 18px;font-size:.78rem;">Order Now</a></div>
+      <div class="dish-card"><img src="4.jpg" alt="Dish 3"><h4>Garlic Butter Shrimp</h4><a href="#" class="btn btn-dark" style="padding:8px 18px;font-size:.78rem;">Order Now</a></div>
+      <div class="dish-card"><img src="5.jpg" alt="Dish 4"><h4>Fire-Grilled Steak</h4><a href="#" class="btn btn-dark" style="padding:8px 18px;font-size:.78rem;">Order Now</a></div>
+      <div class="dish-card extra-dish"><img src="6.jpg" alt="Dish 5"><h4>Slow-Cooked Stew</h4><a href="#" class="btn btn-dark" style="padding:8px 18px;font-size:.78rem;">Order Now</a></div>
+      <div class="dish-card extra-dish"><img src="7.jpg" alt="Dish 6"><h4>Street-Style Tacos</h4><a href="#" class="btn btn-dark" style="padding:8px 18px;font-size:.78rem;">Order Now</a></div>
+      <div class="dish-card extra-dish"><img src="8.jpg" alt="Dish 7"><h4>Smoked Chicken Wings</h4><a href="#" class="btn btn-dark" style="padding:8px 18px;font-size:.78rem;">Order Now</a></div>
+      <div class="dish-card extra-dish"><img src="9.jpg" alt="Dish 8"><h4>Caramel Ember Cake</h4><a href="#" class="btn btn-dark" style="padding:8px 18px;font-size:.78rem;">Order Now</a></div>
+    </div>
+    <div class="see-more-wrap">
+      <button class="btn btn-primary" id="dishExploreMore"><i class="fa-solid fa-chevron-down"></i> Explore More</button>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--grey);">
+  <div class="container">
+    <div class="msg-bar reveal"><h3>Our Special Dishes Are Here — Wanna See?</h3><i class="fa-solid fa-utensils"></i></div>
+    <div class="msg-bar amber reveal"><h3>Fresh Ingredients, Fire-Finished, Every Single Day</h3><i class="fa-solid fa-fire"></i></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">Ember<span>&Oak</span></a>
+        <p>Comfort food, cooked with a little craft — dine in, or order straight to your door.</p>
+        <div class="footer-socials">
+          <a href="#" class="circle-icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="circle-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="circle-icon"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5 style="color:#fff;margin-bottom:16px;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;">Menu</h5>
+        <p class="mango" style="margin-bottom:10px; "><a href="#">Reservations</a></p>
+        <p class="mango" style="margin-bottom:10px;"><a href="#">Order Online</a></p>
+        <p class="mango"><a href="#">Gift Cards</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Ember & Oak — All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  const hamBtn = document.getElementById('hamBtn');
+  const hamDropdown = document.getElementById('hamDropdown');
+  hamBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    hamDropdown.classList.toggle('open');
+  });
+  document.addEventListener('click', () => hamDropdown.classList.remove('open'));
+
+  const discountBtn = document.getElementById('discountSeeMore');
+  const discountWrap = document.getElementById('discountWrap');
+  discountBtn.addEventListener('click', () => {
+    const isOpen = discountWrap.classList.toggle('show-extra');
+    discountBtn.innerHTML = isOpen ? '<i class="fa-solid fa-chevron-up"></i> See Less' : '<i class="fa-solid fa-chevron-down"></i> See More';
+  });
+
+  const dishBtn = document.getElementById('dishExploreMore');
+  const dishGrid = document.getElementById('dishGrid');
+  dishBtn.addEventListener('click', () => {
+    const isOpen = dishGrid.classList.toggle('show-extra');
+    dishBtn.innerHTML = isOpen ? '<i class="fa-solid fa-chevron-up"></i> Show Less' : '<i class="fa-solid fa-chevron-down"></i> Explore More';
+  });
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => revealObserver.observe(el));
+</script>
+</body>
+</html>

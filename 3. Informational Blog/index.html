@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Northline — Stories Worth Your Time</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="logo">Abdullah<span>.</span></a>
+    <div class="nav-search"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search articles..."></div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <a href="#" class="btn btn-primary">Visit Now</a>
+  </div>
+</header>
+
+<section style="padding-bottom:0;">
+  <div class="container">
+    <h2 class="section-title reveal">Latest From The <span style="color:var(--accent);">Desk</span></h2>
+    <p class="reveal" style="color:var(--ink-soft);">Pick a category — the story and thumbnails below update, nothing else on the page moves.</p>
+
+    <div class="tab-row reveal" id="tabRow">
+      <button class="tab-chip active" data-tab="tech">Tech</button>
+      <button class="tab-chip" data-tab="business">Business</button>
+      <button class="tab-chip" data-tab="lifestyle">Lifestyle</button>
+      <button class="tab-chip" data-tab="travel">Travel</button>
+      <button class="tab-chip" data-tab="sports">Sports</button>
+    </div>
+
+    <div class="feature-grid reveal">
+      <div class="feature-main">
+        <img id="featMainImg" src="https://picsum.photos/seed/tech-feature/700/400" alt="Featured article image">
+        <div class="feature-main-body">
+          <h3 id="featMainTitle">The Quiet Rise of On-Device AI</h3>
+          <p id="featMainText">Smaller models running locally are starting to outpace cloud calls for everyday tasks — here's what changed and why it matters for how apps get built.</p>
+          <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="feature-side" id="featSide">
+        <div class="feature-thumb"><img src="https://picsum.photos/seed/1/80/80" alt="Related thumbnail 1"><div><h4 id="thumb1Title">Chips Are the New Oil</h4><p id="thumb1Text">Why compute has become the scarcest resource in tech.</p></div></div>
+        <div class="feature-thumb"><img src="https://picsum.photos/seed/2/80/80" alt="Related thumbnail 2"><div><h4 id="thumb2Title">Open Source, Closed Doors</h4><p id="thumb2Text">The tension between open models and closed platforms.</p></div></div>
+        <div class="feature-thumb"><img src="https://picsum.photos/seed/3/80/80" alt="Related thumbnail 3"><div><h4 id="thumb3Title">Debugging With a Co-Pilot</h4><p id="thumb3Text">How assistants changed the shape of a developer's day.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="facts-bar reveal">
+      <div class="fact-item"><i class="fa-solid fa-newspaper"></i><div class="fact-num" data-count="12000">0</div><div class="fact-label">Articles Published</div></div>
+      <div class="fact-item"><i class="fa-solid fa-user-group"></i><div class="fact-num" data-count="85000">0</div><div class="fact-label">Monthly Readers</div></div>
+      <div class="fact-item"><i class="fa-solid fa-pen-nib"></i><div class="fact-num" data-count="240">0</div><div class="fact-label">Contributing Writers</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="info-bar reveal">
+      <img src="https://picsum.photos/seed/a/140/100" alt="Info image A">
+      <img src="https://picsum.photos/seed/b/140/100" alt="Info image B">
+      <div class="info-text"><h4>Why We Fact-Check Every Draft Twice</h4><p>A short look inside our editorial process, and why it slows us down on purpose.</p></div>
+      <a href="#" class="btn btn-ghost">Learn More</a>
+    </div>
+    <div class="info-bar reveal">
+      <img src="https://picsum.photos/seed/c/140/100" alt="Info image C">
+      <img src="https://picsum.photos/seed/d/140/100" alt="Info image D">
+      <div class="info-text"><h4>Meet The Writers Behind Northline</h4><p>Ten years of combined newsroom experience, now writing for the web first.</p></div>
+      <a href="#" class="btn btn-ghost">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <h2 class="section-title reveal">More From <span style="color:var(--accent);">Northline</span></h2>
+    <p class="reveal" style="color:var(--ink-soft);margin-bottom:40px;">A grab bag of recent reads across every desk.</p>
+    <div class="blog-grid reveal">
+      <div class="blog-card"><img src="https://picsum.photos/seed/business/360/220" alt="Business article"><div class="blog-card-body"><span class="tag">Business</span><h4>The Quiet Return of Small Retail</h4><p>Local shops are competing on something big-box stores can't fake.</p><a href="#" class="read-more">Read More</a></div></div>
+      <div class="blog-card"><img src="https://picsum.photos/seed/lifestyle/360/220" alt="Lifestyle article"><div class="blog-card-body"><span class="tag">Lifestyle</span><h4>What a Slower Morning Actually Buys You</h4><p>We tracked 30 days of a no-phone first hour. Here's what changed.</p><a href="#" class="read-more">Read More</a></div></div>
+      <div class="blog-card"><img src="https://picsum.photos/seed/travel/360/220" alt="Travel article"><div class="blog-card-body"><span class="tag">Travel</span><h4>The Towns Airlines Forgot</h4><p>Three overlooked stops that are easier to reach than you'd think.</p><a href="#" class="read-more">Read More</a></div></div>
+      <div class="blog-card"><img src="https://picsum.photos/seed/sports/360/220" alt="Sports article"><div class="blog-card-body"><span class="tag">Sports</span><h4>Why the Underdog Story Keeps Working</h4><p>A look at why we still fall for it, season after season.</p><a href="#" class="read-more">Read More</a></div></div>
+      <div class="blog-card"><img src="https://picsum.photos/seed/tech/360/220" alt="Tech article"><div class="blog-card-body"><span class="tag">Tech</span><h4>The Browser Tab Problem Nobody Solved</h4><p>Every generation of tools promises to fix it. None quite have.</p><a href="#" class="read-more">Read More</a></div></div>
+      <div class="blog-card"><img src="https://picsum.photos/seed/business/360/220" alt="Business article 2"><div class="blog-card-body"><span class="tag">Business</span><h4>Freelancing Isn't a Backup Plan Anymore</h4><p>More people are choosing it first — the numbers back that up.</p><a href="#" class="read-more">Read More</a></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">Northline<span>.</span></a>
+        <p>Short, well-checked reads on tech, business, and everyday life.</p>
+        <div class="footer-socials">
+          <a href="#" class="circle-icon"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="circle-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="circle-icon"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5 style="color:#fff;margin-bottom:16px;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;">Explore</h5>
+        <p style="margin-bottom:10px;"><a href="#">Home</a></p>
+        <p style="margin-bottom:10px;"><a href="#">About Us</a></p>
+        <p><a href="#">Contact Us</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Northline — All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  // Tab data — switching a tab only changes the feature block below, nothing else.
+  const tabData = {
+    tech: {
+      img: 'https://picsum.photos/seed/tech-feature/700/400',
+      title: 'The Quiet Rise of On-Device AI',
+      text: "Smaller models running locally are starting to outpace cloud calls for everyday tasks — here's what changed and why it matters for how apps get built.",
+      thumbs: [
+        { img:'https://picsum.photos/seed/1/80/80', title:'Chips Are the New Oil', text:'Why compute has become the scarcest resource in tech.' },
+        { img:'https://picsum.photos/seed/2/80/80', title:'Open Source, Closed Doors', text:'The tension between open models and closed platforms.' },
+        { img:'https://picsum.photos/seed/3/80/80', title:'Debugging With a Co-Pilot', text:'How assistants changed the shape of a developer\'s day.' }
+      ]
+    },
+    business: {
+      img: 'https://picsum.photos/seed/business-feature/700/400',
+      title: 'The Quiet Return of Small Retail',
+      text: "Local shops are competing on something big-box stores can't fake — and it's starting to show up in the numbers.",
+      thumbs: [
+        { img:'https://picsum.photos/seed/1/80/80', title:'Freelancing Isn\'t a Backup Plan', text:'More people are choosing it first, on purpose.' },
+        { img:'https://picsum.photos/seed/2/80/80', title:'The Four-Day Week, Revisited', text:'What the second round of trials actually found.' },
+        { img:'https://picsum.photos/seed/3/80/80', title:'Why Startups Are Staying Smaller', text:'Lean teams are outperforming bloated ones again.' }
+      ]
+    },
+    lifestyle: {
+      img: 'https://picsum.photos/seed/lifestyle-feature/700/400',
+      title: 'What a Slower Morning Actually Buys You',
+      text: 'We tracked 30 days of a no-phone first hour. Here is what changed, and what quietly did not.',
+      thumbs: [
+        { img:'https://picsum.photos/seed/1/80/80', title:'The Case for Boring Weekends', text:'Doing less on purpose, and liking it.' },
+        { img:'https://picsum.photos/seed/2/80/80', title:'Cooking for One, Properly', text:'Small-batch recipes that do not feel like a compromise.' },
+        { img:'https://picsum.photos/seed/3/80/80', title:'Why We Keep Re-Reading Old Books', text:'The comfort of already knowing the ending.' }
+      ]
+    },
+    travel: {
+      img: 'https://picsum.photos/seed/travel-feature/700/400',
+      title: 'The Towns Airlines Forgot',
+      text: 'Three overlooked stops that are easier to reach than you would think, and quieter than anywhere on your list.',
+      thumbs: [
+        { img:'https://picsum.photos/seed/1/80/80', title:'Packing Light, Actually', text:'A carry-on system that survives a two-week trip.' },
+        { img:'https://picsum.photos/seed/2/80/80', title:'The Train Routes Worth the Detour', text:'Slower, but you will not mind.' },
+        { img:'https://picsum.photos/seed/3/80/80', title:'Eating Like a Local, Without the Guesswork', text:'A simple method that works in any city.' }
+      ]
+    },
+    sports: {
+      img: 'https://picsum.photos/seed/sports-feature/700/400',
+      title: 'Why the Underdog Story Keeps Working',
+      text: 'A look at why we still fall for it, season after season, no matter how many times the favorite wins instead.',
+      thumbs: [
+        { img:'https://picsum.photos/seed/1/80/80', title:'The Numbers Behind a Comeback', text:'What actually separates a rally from a collapse.' },
+        { img:'https://picsum.photos/seed/2/80/80', title:'Coaching Change, Same Roster', text:'Why the same team can look completely different.' },
+        { img:'https://picsum.photos/seed/3/80/80', title:'The Off-Season Nobody Watches', text:'Where the actual work happens.' }
+      ]
+    }
+  };
+
+  const tabChips = document.querySelectorAll('.tab-chip');
+  const featMainImg = document.getElementById('featMainImg');
+  const featMainTitle = document.getElementById('featMainTitle');
+  const featMainText = document.getElementById('featMainText');
+  const thumbEls = [
+    { title: document.getElementById('thumb1Title'), text: document.getElementById('thumb1Text') },
+    { title: document.getElementById('thumb2Title'), text: document.getElementById('thumb2Text') },
+    { title: document.getElementById('thumb3Title'), text: document.getElementById('thumb3Text') }
+  ];
+  const thumbImgs = document.querySelectorAll('#featSide img');
+
+  tabChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      tabChips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      const data = tabData[chip.dataset.tab];
+      if (!data) return;
+      featMainImg.src = data.img;
+      featMainTitle.textContent = data.title;
+      featMainText.textContent = data.text;
+      data.thumbs.forEach((t, i) => {
+        thumbEls[i].title.textContent = t.title;
+        thumbEls[i].text.textContent = t.text;
+        thumbImgs[i].src = t.img;
+      });
+    });
+  });
+
+  // Facts counter — runs once on page load
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.fact-num').forEach(el => {
+      const target = parseInt(el.dataset.count, 10);
+      let current = 0;
+      const step = Math.max(1, Math.ceil(target / 60));
+      const tick = () => {
+        current += step;
+        if (current >= target) { el.textContent = target.toLocaleString() + '+'; return; }
+        el.textContent = current.toLocaleString();
+        requestAnimationFrame(tick);
+      };
+      tick();
+    });
+  });
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => revealObserver.observe(el));
+</script>
+</body>
+</html>
