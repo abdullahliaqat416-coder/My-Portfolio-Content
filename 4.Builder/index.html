@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ridgeline Build Co. — Custom Home Builders</title>
+<meta name="description" content="Ridgeline Build Co. designs and builds custom homes, renovations and additions. Get a free estimate for your next project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <path d="M2 17L15 6L28 17" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 15.5V26H24V15.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="logo-text">RIDGELINE<em>BUILD CO.</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#top">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+15551234567">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8C8.1 13.8 10.2 15.9 13.2 17.4L15.5 15.1C15.8 14.8 16.3 14.7 16.7 14.9C18 15.4 19.4 15.7 20.9 15.8C21.5 15.8 22 16.3 22 16.9V20.9C22 21.5 21.5 22 20.9 22C10.4 22 2 13.6 2 3.1C2 2.5 2.5 2 3.1 2H7.1C7.7 2 8.2 2.5 8.2 3.1C8.3 4.6 8.6 6 9.1 7.3C9.3 7.7 9.2 8.2 8.9 8.5L6.6 10.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        (555) 123-4567
+      </a>
+      <a href="#contact" class="btn btn-primary btn-small">Get a Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <svg class="hero-shape" viewBox="0 0 1000 900" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,0 H620 C560,180 700,340 600,520 C520,660 640,780 560,900 H0 Z"/>
+  </svg>
+
+  <div class="wrap hero-inner">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Houses built to<br>outlast the trend.
+      </h1>
+      <p class="hero-text">
+        Ridgeline plans, permits and builds custom homes from the foundation up — no cut corners,
+        no surprise change orders. Just a house your family can settle into for good.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+        <a href="#services" class="btn btn-ghost">See Our Work</a>
+      </div>
+    </div>
+
+    <div class="hero-media">
+      <span class="ring ring-1" aria-hidden="true"></span>
+      <span class="ring ring-2" aria-hidden="true"></span>
+      <span class="dot" aria-hidden="true"></span>
+      <img src="https://images.unsplash.com/photo-1704742950992-9815a104820c?auto=format&fit=crop&w=1100&q=80"
+           alt="A house mid-construction, wooden frame and roof structure taking shape"
+           class="hero-photo" loading="eager">
+    </div>
+  </div>
+
+  <!-- stat bar overlaps the hero/services seam -->
+  <div class="wrap">
+    <div class="stats-bar" id="statsBar">
+      <div class="stat">
+        <span class="stat-num" data-target="14">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Years Building</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="260">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Homes Delivered</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="8">0</span>
+        <span class="stat-label">Cities Served</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="98">0</span><span class="stat-suffix">%</span>
+        <span class="stat-label">On-Time Handover</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What We Build</h2>
+      <p>From the first sketch to the final walkthrough, our crews handle every stage of the build in-house.</p>
+    </div>
+
+    <div class="service-grid">
+      <article class="service-card">
+        <span class="service-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M4 21V9L12 3L20 9V21" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 21V13H15V21" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </span>
+        <h3>Custom Home Design</h3>
+        <p>We sit down with you, sketch the layout around how your family actually lives, then hand it to our architects for permit-ready drawings.</p>
+      </article>
+
+      <article class="service-card">
+        <span class="service-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M14.5 3.5L20.5 9.5L9 21L3 21L3 15L14.5 3.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 6L18 12" stroke="currentColor" stroke-width="1.6"/></svg>
+        </span>
+        <h3>New Home Construction</h3>
+        <p>Foundation, framing, roofing, finishing — one crew stays on your site from groundbreaking to the day you get the keys.</p>
+      </article>
+
+      <article class="service-card">
+        <span class="service-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M4 14H10V20" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 4V10H20" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </span>
+        <h3>Renovation &amp; Additions</h3>
+        <p>Adding a floor, opening up a kitchen, or extending the back of the house — we work around your family while it happens.</p>
+      </article>
+
+      <article class="service-card">
+        <span class="service-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M4 21C4 16.6 7.6 14 12 14C16.4 14 20 16.6 20 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </span>
+        <h3>Project Management</h3>
+        <p>One site supervisor, one schedule, one number to call. You get weekly updates instead of chasing five different contractors.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="wrap about-inner">
+    <div class="about-media">
+      <span class="half-circle half-circle-a" aria-hidden="true"></span>
+      <span class="half-circle half-circle-b" aria-hidden="true"></span>
+      <div class="about-photo-slot">
+        <span>Drop your site or team photo here</span>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <h2>Built on trust, not shortcuts.</h2>
+      <p>
+        Ridgeline started in 2012 with two carpenters and a pickup truck full of borrowed tools.
+        Fourteen years later we're still a builder-run company — the people who quote your job
+        are the same people who show up on the site every morning.
+      </p>
+      <p>
+        We keep our crews small on purpose. It means slower growth, but it also means someone
+        who actually built your staircase can answer the phone when you call.
+      </p>
+      <a href="#contact" class="btn btn-outline">Talk to the Team</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="testimonials">
+  <div class="wrap">
+    <div class="section-head section-head-light">
+      <h2>What homeowners say</h2>
+      <p>A few words from people whose keys we handed over.</p>
+    </div>
+
+    <div class="testimonial-grid">
+      <article class="testimonial-card">
+        <p class="quote">"They finished the framing two weeks ahead of schedule and never once tried to upsell us on something we didn't need. Rare in this industry."</p>
+        <div class="testimonial-person">
+          <span class="avatar">SR</span>
+          <div>
+            <strong>Sana Riaz</strong>
+            <span>Model Town, Lahore</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <p class="quote">"Our site supervisor sent photos every single evening. We were living abroad during the build and still knew exactly what was going on."</p>
+        <div class="testimonial-person">
+          <span class="avatar">FH</span>
+          <div>
+            <strong>Fahad Hussain</strong>
+            <span>DHA Phase 5</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <p class="quote">"We added a full second floor while still living downstairs. Dust and noise were managed better than I expected for that scale of work."</p>
+        <div class="testimonial-person">
+          <span class="avatar">MA</span>
+          <div>
+            <strong>Mahnoor Ahmed</strong>
+            <span>Gulberg III</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="wrap cta-inner">
+    <h2>Ready to break ground on your house?</h2>
+    <p>Tell us about the plot, the budget and the timeline. We'll come back with a real number, not a placeholder one.</p>
+    <a href="#contact" class="btn btn-light">Start Your Project</a>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <div class="contact-info">
+      <h2>Let's talk about your plot.</h2>
+      <p>Fill the form and our site team will call you back within one working day, or reach us directly.</p>
+      <ul class="contact-list">
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8C8.1 13.8 10.2 15.9 13.2 17.4L15.5 15.1C15.8 14.8 16.3 14.7 16.7 14.9C18 15.4 19.4 15.7 20.9 15.8C21.5 15.8 22 16.3 22 16.9V20.9C22 21.5 21.5 22 20.9 22C10.4 22 2 13.6 2 3.1C2 2.5 2.5 2 3.1 2H7.1C7.7 2 8.2 2.5 8.2 3.1C8.3 4.6 8.6 6 9.1 7.3C9.3 7.7 9.2 8.2 8.9 8.5L6.6 10.8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          (555) 123-4567
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M3 6.5L12 13L21 6.5" stroke="currentColor" stroke-width="1.5"/></svg>
+          hello@ridgelinebuild.com
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 21 5 14.5 5 9.5C5 5.9 8.1 3 12 3C15.9 3 19 5.9 19 9.5C19 14.5 12 21 12 21Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+          12-B Site Office, Model Town, Lahore
+        </li>
+      </ul>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-success" id="formSuccess" hidden>Thanks — that's in. Someone from our team will call you back within a working day.</div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="fName">Full name</label>
+          <input type="text" id="fName" name="name" placeholder="Your name">
+          <span class="field-error" data-error-for="fName"></span>
+        </div>
+        <div class="field">
+          <label for="fPhone">Phone</label>
+          <input type="tel" id="fPhone" name="phone" placeholder="03xx xxxxxxx">
+          <span class="field-error" data-error-for="fPhone"></span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="fEmail">Email</label>
+        <input type="email" id="fEmail" name="email" placeholder="you@email.com">
+        <span class="field-error" data-error-for="fEmail"></span>
+      </div>
+
+      <div class="field">
+        <label for="fType">What are you looking to do?</label>
+        <select id="fType" name="type">
+          <option value="">Select one</option>
+          <option value="new-build">Build a new house</option>
+          <option value="renovation">Renovate / add a floor</option>
+          <option value="consult">Just want a consultation</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="fMessage">Tell us a bit about the project</label>
+        <textarea id="fMessage" name="message" rows="4" placeholder="Plot size, location, rough budget..."></textarea>
+        <span class="field-error" data-error-for="fMessage"></span>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-wide">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-col footer-brand">
+      <span class="logo-text light">RIDGELINE<em>BUILD CO.</em></span>
+      <p>Custom home builders working across the city and its surrounding towns since 2012.</p>
+      <div class="social-row">
+        <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 8.5H17V5.5H15C13.1 5.5 11.5 7.1 11.5 9V11H9.5V14H11.5V19H14.5V14H16.5L17 11H14.5V9C14.5 8.7 14.7 8.5 15 8.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.3"/><circle cx="17" cy="7" r="1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="2.5" stroke="currentColor" stroke-width="1.3"/><path d="M8 10.5V17" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="7.3" r="0.4" fill="currentColor" stroke="currentColor"/><path d="M12 17V13.2C12 11.9 12.8 10.9 14.2 10.9C15.5 10.9 16 11.9 16 13.2V17" stroke="currentColor" stroke-width="1.3"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#top">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Reviews</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">Custom Home Design</a>
+      <a href="#services">New Construction</a>
+      <a href="#services">Renovation &amp; Additions</a>
+      <a href="#services">Project Management</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Site Office</h4>
+      <p>12-B Site Office<br>Model Town, Lahore</p>
+      <p>(555) 123-4567<br>hello@ridgelinebuild.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="wrap">
+      <p>© <span id="year"></span> Ridgeline Build Co. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
