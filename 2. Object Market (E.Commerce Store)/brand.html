@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiln &amp; Co — OBJECT MARKET Brand Storefront</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a href="index.html" class="tb-logo">OBJECT<span>MARKET</span></a>
+      <div class="tb-search-container">
+        <form action="search.html" method="GET" class="tb-search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" name="q" placeholder="Search objects, brands, categories..." autocomplete="off">
+        </form>
+      </div>
+      <div class="tb-icons">
+        <a href="account.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>Account</a>
+        <a href="wishlist.html"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg>Wishlist</a>
+        <a href="cart.html"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>Cart<span class="tb-badge cart-count" style="display:none;">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding: 30px 0 80px;">
+    <!-- Brand Header -->
+    <div style="background:var(--white); border:1px solid var(--line); padding:40px; margin-bottom:32px;">
+      <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.12em; color:var(--cobalt); font-weight:700; margin-bottom:6px;">Featured Studio</div>
+      <h1 style="font-size:32px; font-weight:700; margin-bottom:12px;">Kiln &amp; Co</h1>
+      <p style="color:var(--ink-2); max-width:600px; font-size:14.5px; line-height:1.6; margin-bottom:20px;">
+        Originating in Kyoto and refined in Berlin, Kiln &amp; Co engineers lighting instruments and precision ceramic objects designed with strict geometric minimalism.
+      </p>
+      <div style="display:flex; gap:24px; font-size:12.5px; color:var(--muted);">
+        <span>Established 2018</span>
+        <span>•</span>
+        <span>Kyoto / Berlin</span>
+        <span>•</span>
+        <span>100% Recyclable Packaging</span>
+      </div>
+    </div>
+
+    <!-- Featured Brand Products -->
+    <div class="section-head">
+      <h2>All Objects by Kiln &amp; Co</h2>
+      <span style="font-size:13px; color:var(--muted);">Showing 4 objects</span>
+    </div>
+
+    <div class="pgrid">
+      <div class="pcard" data-id="om-orbit-lamp" data-brand="Kiln &amp; Co" data-name="Orbit Desk Lamp" data-price="148" data-image="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=600&q=80">
+        <button class="pcard-wish"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+        <div class="pcard-img"><a href="product.html?slug=orbit-desk-lamp"><img src="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=600&q=80" alt="Orbit Desk Lamp"></a></div>
+        <div class="pcard-brand">Kiln &amp; Co</div>
+        <div class="pcard-name"><a href="product.html?slug=orbit-desk-lamp">Orbit Desk Lamp</a></div>
+        <div class="pcard-rating"><span class="stars">★★★★★</span> 4.9 (128)</div>
+        <div class="pcard-bottom"><span class="pcard-price">$148</span><button class="pcard-add">Add</button></div>
+      </div>
+
+      <div class="pcard" data-id="ee-clock" data-brand="Kiln &amp; Co" data-name="Minimalist Desk Clock" data-price="68" data-image="https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=80">
+        <button class="pcard-wish"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+        <div class="pcard-img"><img src="https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=80" alt="Desk Clock"></div>
+        <div class="pcard-brand">Kiln &amp; Co</div>
+        <div class="pcard-name">Minimalist Desk Clock</div>
+        <div class="pcard-rating"><span class="stars">★★★★☆</span> 4.6 (48)</div>
+        <div class="pcard-bottom"><span class="pcard-price">$68</span><button class="pcard-add">Add</button></div>
+      </div>
+
+      <div class="pcard" data-id="kc-vessel" data-brand="Kiln &amp; Co" data-name="Architectural Stoneware Vessel" data-price="92" data-image="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80">
+        <button class="pcard-wish"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+        <div class="pcard-img"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="Stoneware Vessel"></div>
+        <div class="pcard-brand">Kiln &amp; Co</div>
+        <div class="pcard-name">Architectural Stoneware Vessel</div>
+        <div class="pcard-rating"><span class="stars">★★★★★</span> 4.8 (34)</div>
+        <div class="pcard-bottom"><span class="pcard-price">$92</span><button class="pcard-add">Add</button></div>
+      </div>
+
+      <div class="pcard" data-id="kc-tray" data-brand="Kiln &amp; Co" data-name="Cast Ceramic Valet Tray" data-price="38" data-image="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80">
+        <button class="pcard-wish"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+        <div class="pcard-img"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Valet Tray"></div>
+        <div class="pcard-brand">Kiln &amp; Co</div>
+        <div class="pcard-name">Cast Ceramic Valet Tray</div>
+        <div class="pcard-rating"><span class="stars">★★★★★</span> 4.9 (82)</div>
+        <div class="pcard-bottom"><span class="pcard-price">$38</span><button class="pcard-add">Add</button></div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — OBJECT MARKET</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a href="index.html" class="tb-logo">OBJECT<span>MARKET</span></a>
+      <div class="tb-icons" style="margin-left:auto;"><a href="shop.html">Shop Catalog →</a></div>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding: 40px 0 80px; max-width:800px;">
+    <div class="breadcrumb"><a href="index.html">Marketplace</a> &nbsp;/&nbsp; <span>Contact</span></div>
+    <div class="shop-head" style="margin-bottom: 32px;">
+      <h1>Marketplace Support</h1>
+      <p style="color:var(--muted);">Technical questions, brand submissions, or order assistance.</p>
+    </div>
+
+    <form style="background:var(--white); border:1px solid var(--line); padding:32px;" onsubmit="event.preventDefault(); alert('Inquiry received. A marketplace specialist will reply within 1 business day.'); this.reset();">
+      <div class="form-row">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+      </div>
+      <div class="form-row single">
+        <select style="border:1px solid var(--line); padding:12px; font-size:13.5px; background:#fff;">
+          <option>Order &amp; Shipping Inquiries</option>
+          <option>Product Specifications &amp; Compatibility</option>
+          <option>Maker &amp; Brand Submissions</option>
+          <option>Corporate Gifting &amp; Studio Orders</option>
+        </select>
+      </div>
+      <div class="form-row single">
+        <textarea rows="5" placeholder="How can we assist you?" required style="border:1px solid var(--line); padding:12px; font-size:13.5px; outline:none;"></textarea>
+      </div>
+      <button type="submit" class="btn btn-solid" style="padding:14px 28px;">Send Inquiry</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

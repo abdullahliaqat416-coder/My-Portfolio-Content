@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Abdullah Bakery</title>
+<meta name="description" content="Browse cakes, pastries, bread and cookies at Abdullah Bakery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Dancing+Script:wght@600;700&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="brand-mark">A</span>Abdullah Bakery</a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="contact.html" class="btn btn-outline">Take Classes</a>
+      <a href="contact.html" class="btn btn-primary">Order Now</a>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="breadcrumb">Home &nbsp;/&nbsp; Menu</span>
+    <h1>Everything we bake, in one place</h1>
+    <p>From everyday bread to celebration cakes — pick a category and order in a few taps.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="filter-row reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="cakes">Cakes</button>
+      <button class="filter-btn" data-filter="pastries">Pastries</button>
+      <button class="filter-btn" data-filter="bread">Bread</button>
+      <button class="filter-btn" data-filter="cookies">Cookies</button>
+    </div>
+
+    <div class="menu-grid">
+
+      <div class="menu-card reveal" data-category="cakes">
+        <div class="frame"><img src="https://images.unsplash.com/photo-1587248720327-8eb72564be1e?w=500&q=80&auto=format&fit=crop" alt="Chocolate fudge cake slice" loading="lazy"></div>
+        <div class="menu-body">
+          <span class="menu-tag">Cakes</span>
+          <h3>Chocolate Fudge Cake</h3>
+          <p>Rich cocoa sponge with dark ganache, whole cake.</p>
+          <div class="menu-meta"><span class="price">Rs 2,400</span><a href="contact.html" class="btn btn-outline" style="padding:8px 18px; font-size:0.8rem;">Order</a></div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-category="cakes">
+        <div class="frame"><img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=500&q=80&auto=format&fit=crop" alt="Red velvet cake" loading="lazy"></div>
+        <div class="menu-body">
+          <span class="menu-tag">Cakes</span>
+          <h3>Red Velvet Cake</h3>
+          <p>Cream cheese frosting, soft crumb, whole cake.</p>
+          <div class="menu-meta"><span class="price">Rs 2,600</span><a href="contact.html" class="btn btn-outline" style="padding:8px 18px; font-size:0.8rem;">Order</a></div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-category="cakes">
+        <div class="frame"><img src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?w=500&q=80&auto=format&fit=crop" alt="Decorated celebration cake" loading="lazy"></div>
+        <div class="menu-body">
+          <span class="menu-tag">Cakes</span>
+          <h3>Custom Celebration Cake</h3>
+          <p>Designed to order for birthdays, weddings and events.</p>
+          <div class="menu-meta"><span class="price">From Rs 3,500</span><a href="contact.html" class="btn btn-outline" style="padding:8px 18px; font-size:0.8rem;">Order</a></div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-category="pastries">
+        <div class="frame"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&q=80&auto=format&fit=crop" alt="Butter croissants" loading="lazy"></div>
+        <div class="menu-body">
+          <span class="menu-tag">Pastries</span>
+          <h3>Butter Croissants</h3>
+          <p>Flaky, hand-laminated, baked fresh every morning.</p>
+          <div class="menu-meta"><span class="price">Rs 250</span><a href="contact.html" class="btn btn-outline" style="padding:8px 18px; font-size:0.8rem;">Order</a></div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-category="pastries">
+        <div class="frame"><img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=500&q=80&auto=format&fit=crop" alt="Assorted cupcakes" loading="lazy"></div>
+        <div class="menu-body">
+          <span class="menu-tag">Pastries</span>
+          <h3>Assorted Cupcakes</h3>
+          <p>Box of six, vanilla and red velvet swirl.</p>
+          <div class="menu-meta"><span class="price">Rs 1,100</span><a href="contact.html" class="btn btn-outline" style="padding:8px 18px; font-size:0.8rem;">Order</a></div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-category="pastries">
+        <div class="frame"><img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=500&q=80&auto=format&fit=crop" alt="Glazed ring donuts" loading="lazy"></div>
+        <div class="menu-body">
+          <span class="menu-tag">Pastries</span>
+          <h3>Glazed Ring Donuts</h3>
+          <p>Soft dough, classic glaze, box of four.</p>
+          <div class="menu-meta"><span class="price">Rs 600</span><a href="contact.html" class="btn btn-outline" style="padding:8px 18px; font-size:0.8rem;">Order</a></div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-category="bread">
+        <div class="frame"><img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=500&q=80&auto=format&fit=crop" alt="Fresh bread loaves" loading="lazy"></div>
+        <div class="menu-body">
+          <span class="menu-tag">Bread</span>
+          <h3>Sourdough Loaf</h3>
+          <p>24-hour ferment, crisp crust, soft open crumb.</p>
+          <div class="menu-meta"><span class="price">Rs 450</span><a href="contact.html" class="btn btn-outline" style="padding:8px 18px; font-size:0.8rem;">Order</a></div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-category="bread">
+        <div class="frame"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=80&auto=format&fit=crop" alt="Assorted bakery bread" loading="lazy"></div>
+        <div class="menu-body">
+          <span class="menu-tag">Bread</span>
+          <h3>Daily Baguette</h3>
+          <p>Crackling crust, baked twice daily in small batches.</p>
+          <div class="menu-meta"><span class="price">Rs 320</span><a href="contact.html" class="btn btn-outline" style="padding:8px 18px; font-size:0.8rem;">Order</a></div>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" data-category="cookies">
+        <div class="frame"><img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=500&q=80&auto=format&fit=crop" alt="Chocolate chip cookies" loading="lazy"></div>
+        <div class="menu-body">
+          <span class="menu-tag">Cookies</span>
+          <h3>Signature Cookies</h3>
+          <p>Chunky chocolate chip, crisp edge, soft centre, dozen pack.</p>
+          <div class="menu-meta"><span class="price">Rs 900</span><a href="contact.html" class="btn btn-outline" style="padding:8px 18px; font-size:0.8rem;">Order</a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="order-banner reveal">
+    <div>
+      <h2>Planning something special?</h2>
+      <p>Custom cake orders need 48 hours' notice — get in touch today.</p>
+    </div>
+    <a href="contact.html" class="btn btn-light">
+      Order Now
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark">A</span>Abdullah Bakery</a>
+        <p>Fresh cakes, bread and pastries, baked daily in Lahore since 2011.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.7-.3-1.5-.8-2.1-1.5-.5-.5-.8-1.1-1-1.4-.1-.2 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1 0-.1-.2-.2-.4-.3Z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Favorites</h4>
+        <ul>
+          <li><a href="menu.html">Cakes</a></li>
+          <li><a href="menu.html">Pastries</a></li>
+          <li><a href="menu.html">Bread</a></li>
+          <li><a href="menu.html">Cookies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+924212345678">+92 42 1234 5678</a></li>
+          <li><a href="mailto:hello@abdullahbakery.pk">hello@abdullahbakery.pk</a></li>
+          <li><a href="contact.html">Liberty Market, Lahore</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Abdullah Bakery. All rights reserved.</span>
+      <span>Baked with love, served with pride.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

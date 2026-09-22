@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Bag — NOVA FORM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Architectural Left-Side Spine (Fixed Rail) -->
+  <aside class="side-spine" aria-label="Atelier Navigation Spine">
+    <div class="spine-top">
+      <a href="index.html" class="spine-logo-mark" aria-label="Nova Form Home">N</a>
+      <div class="spine-3d-badge">3D ON</div>
+    </div>
+    <div class="spine-center">
+      <span class="spine-tagline">NOVA FORM <span>•</span> ARCHITECTURAL ATELIER</span>
+    </div>
+    <div class="spine-bottom">
+      <div class="spine-progress-wrap">
+        <div class="spine-progress-bar"></div>
+      </div>
+      <span class="spine-milestone">01 / 06</span>
+    </div>
+  </aside>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="logo">NOVA FORM</a>
+      <nav class="main-nav">
+        <a href="category-new-arrivals.html">New In</a>
+        <a href="category-women.html">Women</a>
+        <a href="category-men.html">Men</a>
+        <a href="category-accessories.html">Accessories</a>
+        <a href="collections.html">Collections</a>
+      </nav>
+      <div class="header-icons">
+        <button type="button" data-search-open aria-label="Open Search">
+          <svg class="header-icon-svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <a href="account.html" aria-label="Account">
+          <svg class="header-icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+        </a>
+        <a href="wishlist.html" aria-label="Wishlist">
+          <svg class="header-icon-svg" viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg>
+          <span class="badge wishlist-count" style="display:none;">0</span>
+        </a>
+        <button type="button" data-cart-open aria-label="Shopping Bag">
+          <svg class="header-icon-svg" viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+          <span class="badge bag-count" style="display:none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap breadcrumb">
+      <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Shopping Bag</span>
+    </div>
+
+    <div class="wrap shop-head">
+      <h1>Your Shopping Bag</h1>
+    </div>
+
+    <div class="wrap cart-layout">
+      <!-- Items Column -->
+      <div class="full-cart-items">
+        <!-- Injected via script.js -->
+      </div>
+
+      <!-- Summary Column -->
+      <div class="summary-box">
+        <h3>Order Summary</h3>
+        <div class="sum-row">
+          <span>Subtotal</span>
+          <span class="cart-summary-subtotal">$0.00</span>
+        </div>
+        <div class="sum-row">
+          <span>Estimated Shipping</span>
+          <span class="cart-summary-shipping">Calculated at checkout</span>
+        </div>
+        <div class="sum-row">
+          <span>Taxes</span>
+          <span>Calculated at checkout</span>
+        </div>
+        <div class="sum-row total">
+          <span>Estimated Total</span>
+          <span class="cart-summary-total">$0.00</span>
+        </div>
+
+        <div style="margin-top: 28px;">
+          <a href="checkout.html" class="btn btn-dark" style="width: 100%; text-align: center;">Proceed to Checkout</a>
+          <a href="shop.html" class="link-underline" style="display:flex; justify-content:center; margin-top:16px;">Continue Shopping <span class="arrow">→</span></a>
+        </div>
+
+        <div style="margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border-light); font-size: 12px; color: var(--taupe); line-height: 1.6;">
+          <p>✓ Complimentary standard shipping on orders over $200.</p>
+          <p>✓ 30-day effortless studio returns and exchanges.</p>
+          <p>✓ Certified sustainable packaging materials.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col-1">
+          <div class="footer-logo">NOVA FORM</div>
+          <p class="tag">Contemporary essentials, thoughtfully made.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="category-new-arrivals.html">New Arrivals</a>
+          <a href="category-women.html">Women</a>
+          <a href="category-men.html">Men</a>
+          <a href="category-accessories.html">Accessories</a>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <a href="about.html">Our Story</a>
+          <a href="journal.html">Journal</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <a href="shipping.html">Shipping</a>
+          <a href="returns.html">Returns</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 NOVA FORM. All rights reserved.</span>
+        <span>Privacy · Terms</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

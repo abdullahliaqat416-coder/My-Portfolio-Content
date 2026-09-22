@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Full Collection — Atelier Lumen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span class="menu-lines"><span></span><span></span><span></span></span>
+    </button>
+    <a href="index.html" class="logo">ATELIER <span>LUMEN</span></a>
+    <div class="header-actions">
+      <a href="search.html" class="icon-btn" aria-label="Search">
+        <svg class="icon-line" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      </a>
+      <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+        <svg class="icon-line" viewBox="0 0 24 24"><path d="M12 20s-7-4.35-9.5-8.5C.7 8 2 4 6 4c2.2 0 3.6 1.3 4 2 .4-.7 1.8-2 4-2 4 0 5.3 4 3.5 7.5C19 15.65 12 20 12 20z"/></svg>
+      </a>
+      <a href="cart.html" class="icon-btn" aria-label="Bag">
+        <span class="cart-count">2</span>
+        <svg class="icon-line" viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-overlay" id="nav-overlay" aria-label="Main Navigation">
+  <button class="nav-close" id="nav-close">Close</button>
+  <div class="nav-overlay-inner">
+    <div class="nav-primary">
+      <a href="shop.html">All Collection</a>
+      <a href="new-collection.html">New Arrivals</a>
+      <a href="objects.html">Objects &amp; Ceramics</a>
+      <a href="wear.html">Garments &amp; Wear</a>
+      <a href="travel.html">Travel Luggage</a>
+      <a href="interiors.html">Home &amp; Living</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="limited-editions.html">Limited Editions</a>
+      <a href="lookbook.html">Lookbook</a>
+    </div>
+    <div class="nav-side">
+      <div>
+        <span class="nav-label">Studio &amp; Story</span>
+        <div class="nav-secondary">
+          <a href="about.html">About the Atelier</a>
+          <a href="journal.html">The Journal</a>
+          <a href="contact.html">Contact &amp; Appointments</a>
+        </div>
+      </div>
+      <div>
+        <span class="nav-label">Client Care</span>
+        <div class="nav-utility">
+          <a href="shipping.html">Shipping &amp; Duties</a>
+          <a href="returns.html">Returns &amp; Exchanges</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="nav-meta">
+        <p><strong>Atelier Lumen Studio</strong></p>
+        <p>14 Rue des Tanneurs, Paris &middot; Kyoto Workshop</p>
+        <p>Monday&mdash;Saturday, 10:00 &mdash; 19:00</p>
+        <p>concierge@atelierlumen.com</p>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Catalog Raisonn&eacute;</span>
+      <h1>The Full Collection</h1>
+      <p>Objects, garments and functional pieces crafted slowly for everyday permanence. Each item is produced in small batches by master artisans.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="filter-chips">
+          <button class="filter-chip active">All</button>
+          <button class="filter-chip">Objects</button>
+          <button class="filter-chip">Wear</button>
+          <button class="filter-chip">Travel</button>
+          <button class="filter-chip">Home</button>
+          <button class="filter-chip">Accessories</button>
+          <button class="filter-chip">Limited Editions</button>
+        </div>
+        <span class="filter-count">16 Pieces</span>
+      </div>
+
+      <div class="product-grid" style="margin-top: 40px;">
+        <!-- 1 -->
+        <div class="product-card" data-category="travel">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="Lumen Leather Weekender" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="lumen-weekender" data-title="Lumen Leather Weekender" data-price="390" data-cat="No. 04 — Travel" data-image="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=80">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Lumen Leather Weekender</a></h3><span class="product-code">No. 04 &mdash; Travel</span></div>
+            <span class="price">$390</span>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="product-card" data-category="objects">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="No. 04 Ceramic Vessel" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="ceramic-vessel" data-title="No. 04 Ceramic Vessel" data-price="120" data-cat="No. 01 — Objects" data-image="https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?auto=format&fit=crop&w=1000&q=80">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">No. 04 Ceramic Vessel</a></h3><span class="product-code">No. 01 &mdash; Objects</span></div>
+            <span class="price">$120</span>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="product-card" data-category="wear">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="Linea Wool Coat" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="linea-wool-coat" data-title="Linea Wool Coat" data-price="480" data-cat="No. 06 — Wear" data-image="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?auto=format&fit=crop&w=1000&q=80">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Linea Wool Coat</a></h3><span class="product-code">No. 06 &mdash; Wear</span></div>
+            <span class="price">$480</span>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="product-card" data-category="objects">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="Arc Desk Object" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="arc-desk-object" data-title="Arc Desk Object" data-price="165" data-cat="No. 02 — Objects" data-image="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1000&q=80">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Arc Desk Object</a></h3><span class="product-code">No. 02 &mdash; Objects</span></div>
+            <span class="price">$165</span>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="product-card" data-category="wear">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph ph-clay" data-label="Espresso Linen Overshirt" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="linen-overshirt" data-title="Espresso Linen Overshirt" data-price="420" data-cat="No. 03 — Wear" data-image="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=75">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Espresso Linen Overshirt</a></h3><span class="product-code">No. 03 &mdash; Wear</span></div>
+            <span class="price">$420</span>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="product-card" data-category="objects">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="Hand-Thrown Stoneware Vessel" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="stoneware-vessel" data-title="Hand-Thrown Stoneware Vessel" data-price="310" data-cat="No. 01 — Objects" data-image="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=75">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Hand-Thrown Stoneware Vessel</a></h3><span class="product-code">No. 01 &mdash; Objects</span></div>
+            <span class="price">$310</span>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="product-card" data-category="travel">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph ph-sage" data-label="Waxed Canvas Weekender" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="waxed-weekender" data-title="Waxed Canvas Weekender" data-price="690" data-cat="No. 04 — Travel" data-image="https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=1200&q=75">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Waxed Canvas Weekender</a></h3><span class="product-code">No. 04 &mdash; Travel</span></div>
+            <span class="price">$690</span>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="product-card" data-category="home">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph ph-terracotta" data-label="Merino Bed Throw" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="bed-throw" data-title="Merino Bed Throw" data-price="460" data-cat="No. 09 — Home" data-image="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=75">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Merino Bed Throw</a></h3><span class="product-code">No. 09 &mdash; Home</span></div>
+            <span class="price">$460</span>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="product-card" data-category="wear">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="Washed Cotton Shirt, Ivory" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="cotton-shirt" data-title="Washed Cotton Shirt, Ivory" data-price="210" data-cat="No. 05 — Wear" data-image="https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=1200&q=75">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Washed Cotton Shirt, Ivory</a></h3><span class="product-code">No. 05 &mdash; Wear</span></div>
+            <span class="price">$210</span>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="product-card" data-category="objects">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="Hand-Blown Glass Carafe" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="glass-carafe" data-title="Hand-Blown Glass Carafe" data-price="190" data-cat="No. 02 — Objects" data-image="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1200&q=75">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Hand-Blown Glass Carafe</a></h3><span class="product-code">No. 02 &mdash; Objects</span></div>
+            <span class="price">$190</span>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="product-card" data-category="accessories">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="Brass Cuff, Hammered" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="brass-cuff" data-title="Brass Cuff, Hammered" data-price="220" data-cat="No. 07 — Accessories" data-image="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?auto=format&fit=crop&w=1200&q=75">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Brass Cuff, Hammered</a></h3><span class="product-code">No. 07 &mdash; Accessories</span></div>
+            <span class="price">$220</span>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="product-card" data-category="limited-editions">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph ph-dark" data-label="Edition No. 02 — Cast Bronze Bowl" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="bronze-bowl" data-title="Cast Bronze Bowl" data-price="540" data-cat="Limited Edition of 20" data-image="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1200&q=75">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Cast Bronze Bowl</a></h3><span class="product-code">Limited Edition of 20</span></div>
+            <span class="price">$540</span>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="product-card" data-category="wear">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph ph-sage" data-label="Merino Crewneck, Clay" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="merino-crewneck" data-title="Merino Crewneck, Clay" data-price="285" data-cat="No. 08 — Wear" data-image="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1200&q=75">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Merino Crewneck, Clay</a></h3><span class="product-code">No. 08 &mdash; Wear</span></div>
+            <span class="price">$285</span>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="product-card" data-category="home">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="Linen Bedding Set, Stone" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="linen-bedding" data-title="Linen Bedding Set, Stone" data-price="520" data-cat="No. 12 — Home" data-image="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=75">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Linen Bedding Set, Stone</a></h3><span class="product-code">No. 12 &mdash; Home</span></div>
+            <span class="price">$520</span>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="product-card" data-category="travel">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="Leather Daily Tote" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="daily-tote" data-title="Leather Daily Tote" data-price="490" data-cat="No. 05 — Travel" data-image="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=75">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Leather Daily Tote</a></h3><span class="product-code">No. 05 &mdash; Travel</span></div>
+            <span class="price">$490</span>
+          </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="product-card" data-category="accessories">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="Full-Grain Leather Belt" style="aspect-ratio: 3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="leather-belt" data-title="Full-Grain Leather Belt" data-price="180" data-cat="No. 09 — Accessories" data-image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=75">Quick Add</button>
+          </div>
+          <div class="product-info">
+            <div><h3><a href="product.html">Full-Grain Leather Belt</a></h3><span class="product-code">No. 09 &mdash; Accessories</span></div>
+            <span class="price">$180</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="shop.html">Complete Catalog</a>
+      <a href="new-collection.html">New Collection</a>
+      <a href="lookbook.html">Lookbook</a>
+      <a href="limited-editions.html">Limited Editions</a>
+      <a href="journal.html">Journal</a>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <a href="objects.html">Objects &amp; Stoneware</a>
+      <a href="wear.html">Garments &amp; Knitwear</a>
+      <a href="travel.html">Travel Goods</a>
+      <a href="interiors.html">Home &amp; Textiles</a>
+      <a href="accessories.html">Accessories</a>
+    </div>
+    <div class="footer-col">
+      <h4>Client Care</h4>
+      <a href="contact.html">Studio &amp; Concierge</a>
+      <a href="about.html">About the Atelier</a>
+      <a href="shipping.html">Shipping &amp; Duties</a>
+      <a href="returns.html">Returns &amp; Exchanges</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+    <div class="footer-col footer-newsletter">
+      <h4>Correspondence</h4>
+      <p>Receive invitations to private studio previews and limited archival releases.</p>
+      <form>
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="social-circles">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="Pinterest">PT</a>
+      <a href="contact.html" aria-label="Studio Mail">@</a>
+    </div>
+    <p class="footer-legal">&copy; 2026 Atelier Lumen Studio. Paris &middot; Kyoto. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

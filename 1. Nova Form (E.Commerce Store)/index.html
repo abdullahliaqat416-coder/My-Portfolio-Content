@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA FORM — Objects for the way you live.</title>
+  <meta name="description" content="Contemporary lifestyle and fashion essentials designed with quiet confidence and honest materials.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- Architectural Left-Side Spine (Fixed Rail) -->
+  <aside class="side-spine" aria-label="Atelier Navigation Spine">
+    <div class="spine-top">
+      <a href="index.html" class="spine-logo-mark" aria-label="Nova Form Home">N</a>
+      <div class="spine-3d-badge">3D ON</div>
+    </div>
+    <div class="spine-center">
+      <span class="spine-tagline">NOVA FORM <span>•</span> ARCHITECTURAL ATELIER</span>
+    </div>
+    <div class="spine-bottom">
+      <div class="spine-progress-wrap">
+        <div class="spine-progress-bar"></div>
+      </div>
+      <span class="spine-milestone">01 / 06</span>
+    </div>
+  </aside>
+
+  <!-- 1. HEADER -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="logo">NOVA FORM</a>
+
+      <nav class="main-nav">
+        <a href="category-new-arrivals.html">New In</a>
+        <a href="category-women.html">Women</a>
+        <a href="category-men.html">Men</a>
+        <a href="category-accessories.html">Accessories</a>
+        <a href="collections.html">Collections</a>
+      </nav>
+
+      <div class="header-icons">
+        <button type="button" data-search-open aria-label="Open Search">
+          <svg class="header-icon-svg" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+
+        <a href="account.html" aria-label="Account">
+          <svg class="header-icon-svg" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 21c0-4 4-6 8-6s8 2 8 6"/>
+          </svg>
+        </a>
+
+        <a href="wishlist.html" aria-label="Wishlist">
+          <svg class="header-icon-svg" viewBox="0 0 24 24">
+            <path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/>
+          </svg>
+          <span class="badge wishlist-count" style="display:none;">0</span>
+        </a>
+
+        <button type="button" data-cart-open aria-label="Shopping Bag">
+          <svg class="header-icon-svg" viewBox="0 0 24 24">
+            <path d="M6 8h12l-1 12H7L6 8z"/>
+            <path d="M9 8V6a3 3 0 016 0v2"/>
+          </svg>
+          <span class="badge bag-count" style="display:none;">0</span>
+        </button>
+
+        <button type="button" class="burger-btn" data-mobile-menu-open aria-label="Open Menu">
+          <svg class="header-icon-svg" viewBox="0 0 24 24">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-Width Search Overlay -->
+  <div class="search-overlay">
+    <div class="search-panel">
+      <div class="wrap">
+        <div class="search-panel-top">
+          <span class="search-panel-title">Search Nova Form</span>
+          <button type="button" class="search-close" data-search-close>
+            Close ✕
+          </button>
+        </div>
+        <form action="search.html" method="GET" class="search-input-wrap">
+          <input type="text" name="q" placeholder="Search products, collections, materials..." autocomplete="off">
+        </form>
+        <div class="search-suggestions">
+          <div class="sug-group">
+            <h5>Popular Searches</h5>
+            <div class="sug-tags">
+              <a href="search.html?q=Wool+Overshirt" class="sug-tag">Wool Overshirt</a>
+              <a href="search.html?q=Leather+Tote" class="sug-tag">Leather Tote</a>
+              <a href="search.html?q=Knit+Polo" class="sug-tag">Knit Polo</a>
+              <a href="search.html?q=Minimal+Runner" class="sug-tag">Minimal Runner</a>
+              <a href="search.html?q=Linen" class="sug-tag">Linen Tailoring</a>
+            </div>
+          </div>
+          <div class="sug-group">
+            <h5>Curated Collections</h5>
+            <div class="sug-tags">
+              <a href="collections.html" class="sug-tag">Autumn Atelier</a>
+              <a href="collections.html" class="sug-tag">Quiet Luxury</a>
+              <a href="collections.html" class="sug-tag">Raw Materials</a>
+              <a href="collections.html" class="sug-tag">Monochrome Edit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-head">
+      <span class="logo">NOVA FORM</span>
+      <button type="button" data-mobile-menu-close style="font-size:18px;">✕</button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="category-new-arrivals.html">New In</a>
+      <a href="category-women.html">Women</a>
+      <a href="category-men.html">Men</a>
+      <a href="category-accessories.html">Accessories</a>
+      <a href="collections.html">Collections</a>
+      <a href="shop.html">All Products</a>
+    </nav>
+    <div class="mobile-secondary-links">
+      <a href="about.html">About Nova Form</a>
+      <a href="journal.html">Journal</a>
+      <a href="wishlist.html">Saved Items</a>
+      <a href="account.html">My Account</a>
+      <a href="contact.html">Studio & Contact</a>
+    </div>
+  </aside>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="cart-drawer-overlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-head">
+        <h3>Shopping Bag</h3>
+        <button type="button" class="cart-drawer-close" data-cart-close>Close ✕</button>
+      </div>
+      <div class="cart-drawer-items">
+        <!-- Dynamically populated via script.js -->
+      </div>
+      <div class="cart-drawer-footer">
+        <div class="cd-summary-row">
+          <span>Subtotal</span>
+          <span class="cd-subtotal">$0.00</span>
+        </div>
+        <div class="cd-summary-row">
+          <span>Shipping</span>
+          <span class="cd-shipping">Calculated at checkout</span>
+        </div>
+        <div class="cd-summary-row total">
+          <span>Estimated Total</span>
+          <span class="cd-total">$0.00</span>
+        </div>
+        <div class="cd-cta-group">
+          <a href="checkout.html" class="btn btn-dark" style="width:100%;">Proceed to Checkout</a>
+          <a href="cart.html" class="link-underline" style="justify-content:center; padding-top:6px;">View Full Bag</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- 2. HERO WITH INTERACTIVE 3D WEBGL -->
+    <div class="hero-wrapper">
+      <canvas id="hero-3d-canvas"></canvas>
+      <section class="wrap hero">
+        <div class="hero-copy">
+          <div class="hero-badge-3d"><span class="pulse"></span> 3D Interactive Spatial Atelier</div>
+          <h1><span class="gradient-text">Objects for the way</span> you live.</h1>
+          <p>Architectural precision meets cyber-luxury craft. Considered essentials designed with quiet confidence and honest materials, made to stay with you.</p>
+          <div class="hero-ctas">
+            <a href="category-new-arrivals.html" class="btn btn-dark">
+              Explore New Arrivals
+              <span class="btn-icon-arrow">→</span>
+            </a>
+            <a href="collections.html" class="link-underline">
+              View Atelier Collection <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80" alt="NOVA FORM Autumn Lifestyle">
+          <div class="hero-interactive-hint"><span>✦</span> Orbit Mouse to Rotate 3D</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- KINETIC MARQUEE TICKER (Motion Graphics) -->
+    <div class="kinetic-ticker-wrap" aria-hidden="true">
+      <div class="kinetic-ticker-track">
+        <div class="ticker-item"><span class="ticker-bullet"></span> <strong>NOVA FORM ATELIER</strong> AUTUMN / WINTER 2026</div>
+        <div class="ticker-item"><span class="ticker-bullet gold"></span> <strong>TITANIUM & WOOL</strong> HONEST MATERIALS</div>
+        <div class="ticker-item"><span class="ticker-bullet"></span> <strong>SPATIAL LUXURY</strong> CRAFTED IN COPENHAGEN</div>
+        <div class="ticker-item"><span class="ticker-bullet gold"></span> <strong>WORLDWIDE COMPLIMENTARY COURIER</strong> OVER $200</div>
+        <div class="ticker-item"><span class="ticker-bullet"></span> <strong>INTERACTIVE 3D EXPERIENCE</strong> REAL-TIME RAYTRACED FORM</div>
+        <div class="ticker-item"><span class="ticker-bullet gold"></span> <strong>LIMITED ATELIER PRODUCTION</strong> NUMBERED RUNS</div>
+        <div class="ticker-item"><span class="ticker-bullet"></span> <strong>NOVA FORM ATELIER</strong> AUTUMN / WINTER 2026</div>
+        <div class="ticker-item"><span class="ticker-bullet gold"></span> <strong>TITANIUM & WOOL</strong> HONEST MATERIALS</div>
+        <div class="ticker-item"><span class="ticker-bullet"></span> <strong>SPATIAL LUXURY</strong> CRAFTED IN COPENHAGEN</div>
+        <div class="ticker-item"><span class="ticker-bullet gold"></span> <strong>WORLDWIDE COMPLIMENTARY COURIER</strong> OVER $200</div>
+        <div class="ticker-item"><span class="ticker-bullet"></span> <strong>INTERACTIVE 3D EXPERIENCE</strong> REAL-TIME RAYTRACED FORM</div>
+        <div class="ticker-item"><span class="ticker-bullet gold"></span> <strong>LIMITED ATELIER PRODUCTION</strong> NUMBERED RUNS</div>
+      </div>
+    </div>
+
+    <!-- 3. CATEGORIES (6 Items) -->
+    <section class="section wrap">
+      <div class="section-head">
+        <h2>Shop by Category</h2>
+        <a href="shop.html" class="link-underline">View All <span class="arrow">→</span></a>
+      </div>
+      <div class="cat-grid">
+        <a href="category-new-arrivals.html" class="cat-tile">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80" alt="New Arrivals">
+          <div class="cat-content">
+            <div class="cat-name">New Arrivals</div>
+            <span class="cat-count">24 pieces</span>
+          </div>
+        </a>
+        <a href="category-women.html" class="cat-tile">
+          <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=600&q=80" alt="Apparel">
+          <div class="cat-content">
+            <div class="cat-name">Apparel</div>
+            <span class="cat-count">48 pieces</span>
+          </div>
+        </a>
+        <a href="category-accessories.html" class="cat-tile">
+          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=600&q=80" alt="Bags">
+          <div class="cat-content">
+            <div class="cat-name">Bags</div>
+            <span class="cat-count">16 pieces</span>
+          </div>
+        </a>
+        <a href="shop.html?category=footwear" class="cat-tile">
+          <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=600&q=80" alt="Footwear">
+          <div class="cat-content">
+            <div class="cat-name">Footwear</div>
+            <span class="cat-count">12 pieces</span>
+          </div>
+        </a>
+        <a href="category-accessories.html" class="cat-tile">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Accessories">
+          <div class="cat-content">
+            <div class="cat-name">Accessories</div>
+            <span class="cat-count">32 pieces</span>
+          </div>
+        </a>
+        <a href="shop.html?category=home" class="cat-tile">
+          <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?auto=format&fit=crop&w=600&q=80" alt="Home">
+          <div class="cat-content">
+            <div class="cat-name">Home</div>
+            <span class="cat-count">18 pieces</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED PRODUCTS (4-Column Grid) -->
+    <section class="section wrap">
+      <div class="section-head">
+        <h2>Featured Products</h2>
+        <a href="shop.html" class="link-underline">View All <span class="arrow">→</span></a>
+      </div>
+      <div class="product-grid">
+
+        <!-- Product 1 -->
+        <div class="p-card" data-product-id="form-wool-overshirt" data-id="p1" data-name="Form Wool Overshirt" data-price="189" data-image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=form-wool-overshirt">
+              <img class="img-a" src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Form Wool Overshirt">
+              <img class="img-b" src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=800&q=80" alt="Form Wool Overshirt Model">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg>
+            </button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes">
+                <button type="button" class="qa-size">XS</button>
+                <button type="button" class="qa-size selected">S</button>
+                <button type="button" class="qa-size">M</button>
+                <button type="button" class="qa-size">L</button>
+                <button type="button" class="qa-size">XL</button>
+              </div>
+              <button type="button" class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=form-wool-overshirt">Form Wool Overshirt</a></div>
+            <div class="p-desc">Double-faced Italian boiled wool</div>
+            <div class="p-bottom-row">
+              <div class="p-price">$189</div>
+              <div class="p-colors">
+                <span class="p-color-dot" style="background:#2C2A29;"></span>
+                <span class="p-color-dot" style="background:#8C8072;"></span>
+                <span class="p-color-dot" style="background:#575949;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="p-card" data-product-id="structured-leather-tote" data-id="p2" data-name="Structured Leather Tote" data-price="240" data-image="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=structured-leather-tote">
+              <img class="img-a" src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80" alt="Structured Leather Tote">
+              <img class="img-b" src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80" alt="Structured Leather Tote Inside">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg>
+            </button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes">
+                <button type="button" class="qa-size selected">One Size</button>
+              </div>
+              <button type="button" class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=structured-leather-tote">Structured Leather Tote</a></div>
+            <div class="p-desc">Vegetable-tanned saddle leather</div>
+            <div class="p-bottom-row">
+              <div class="p-price">$240</div>
+              <div class="p-colors">
+                <span class="p-color-dot" style="background:#5A3D28;"></span>
+                <span class="p-color-dot" style="background:#1B1917;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="p-card" data-product-id="studio-knit-polo" data-id="p3" data-name="Studio Knit Polo" data-price="125" data-image="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=studio-knit-polo">
+              <img class="img-a" src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=80" alt="Studio Knit Polo">
+              <img class="img-b" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Studio Knit Polo Detail">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg>
+            </button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes">
+                <button type="button" class="qa-size">S</button>
+                <button type="button" class="qa-size selected">M</button>
+                <button type="button" class="qa-size">L</button>
+                <button type="button" class="qa-size">XL</button>
+              </div>
+              <button type="button" class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=studio-knit-polo">Studio Knit Polo</a></div>
+            <div class="p-desc">Fine-gauge Egyptian mercerized cotton</div>
+            <div class="p-bottom-row">
+              <div class="p-price">$125</div>
+              <div class="p-colors">
+                <span class="p-color-dot" style="background:#E5DECE;"></span>
+                <span class="p-color-dot" style="background:#323A30;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="p-card" data-product-id="minimal-runner" data-id="p4" data-name="Minimal Runner" data-price="160" data-image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=minimal-runner">
+              <img class="img-a" src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80" alt="Minimal Runner">
+              <img class="img-b" src="https://images.unsplash.com/photo-1525507119028-ad39799d0b3d?auto=format&fit=crop&w=800&q=80" alt="Minimal Runner Sole">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg>
+            </button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes">
+                <button type="button" class="qa-size">40</button>
+                <button type="button" class="qa-size selected">41</button>
+                <button type="button" class="qa-size">42</button>
+                <button type="button" class="qa-size">43</button>
+                <button type="button" class="qa-size">44</button>
+              </div>
+              <button type="button" class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=minimal-runner">Minimal Runner</a></div>
+            <div class="p-desc">Recycled mesh & calf suede upper</div>
+            <div class="p-bottom-row">
+              <div class="p-price">$160</div>
+              <div class="p-colors">
+                <span class="p-color-dot" style="background:#F0EEE9;"></span>
+                <span class="p-color-dot" style="background:#706D69;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. PROMOTIONAL BANNER -->
+    <section class="wrap" style="padding: 24px 0 36px;">
+      <div class="promo-banner">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=80" alt="NOVA FORM Editorial Collection">
+        <div class="promo-banner-content">
+          <span class="eyebrow" style="color:#ECE5DC;">Seasonal Statement</span>
+          <h3>Designed for everyday, made beyond the season.</h3>
+          <p>Every pattern is drafted in our studio with intention, refined over months of wear to create pieces that transcend temporal trends.</p>
+          <a href="collections.html" class="btn btn-light">
+            Discover the Collection
+            <span class="btn-icon-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. TRENDING PRODUCTS (8-Product Grid) -->
+    <section class="section wrap">
+      <div class="section-head">
+        <h2>Trending Now</h2>
+        <a href="shop.html" class="link-underline">View all <span class="arrow">→</span></a>
+      </div>
+      <div class="product-grid">
+
+        <!-- Item 1 -->
+        <div class="p-card" data-product-id="t-oversized-jacket" data-name="Oversized Shirt Jacket" data-price="265" data-image="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=oversized-shirt-jacket">
+              <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=700&q=80" alt="Oversized Shirt Jacket">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes"><button class="qa-size">S</button><button class="qa-size selected">M</button><button class="qa-size">L</button></div>
+              <button class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=oversized-shirt-jacket">Oversized Shirt Jacket</a></div>
+            <div class="p-desc">Heavyweight organic twill</div>
+            <div class="p-price">$265</div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="p-card" data-product-id="t-leather-ankle-boot" data-name="Leather Ankle Boot" data-price="310" data-image="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=leather-ankle-boot">
+              <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=700&q=80" alt="Leather Ankle Boot">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes"><button class="qa-size">39</button><button class="qa-size selected">40</button><button class="qa-size">41</button></div>
+              <button class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=leather-ankle-boot">Leather Ankle Boot</a></div>
+            <div class="p-desc">Calfskin with Goodyear welt</div>
+            <div class="p-price">$310</div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="p-card" data-product-id="t-cashmere-scarf" data-name="Ribbed Cashmere Scarf" data-price="145" data-image="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=ribbed-cashmere-scarf">
+              <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=700&q=80" alt="Cashmere Scarf">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes"><button class="qa-size selected">One Size</button></div>
+              <button class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=ribbed-cashmere-scarf">Ribbed Cashmere Scarf</a></div>
+            <div class="p-desc">100% Mongolian grade-A cashmere</div>
+            <div class="p-price">$145</div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="p-card" data-product-id="t-woven-belt-bag" data-name="Woven Belt Bag" data-price="165" data-image="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=woven-belt-bag">
+              <img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?auto=format&fit=crop&w=700&q=80" alt="Woven Belt Bag">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes"><button class="qa-size selected">One Size</button></div>
+              <button class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=woven-belt-bag">Woven Belt Bag</a></div>
+            <div class="p-desc">Intrecciato handwoven nappa</div>
+            <div class="p-price">$165</div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="p-card" data-product-id="t-relaxed-linen-shirt" data-name="Relaxed Linen Shirt" data-price="135" data-image="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=relaxed-linen-shirt">
+              <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=700&q=80" alt="Relaxed Linen Shirt">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes"><button class="qa-size">S</button><button class="qa-size selected">M</button><button class="qa-size">L</button></div>
+              <button class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=relaxed-linen-shirt">Relaxed Linen Shirt</a></div>
+            <div class="p-desc">Garment-washed Normandy flax</div>
+            <div class="p-price">$135</div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="p-card" data-product-id="t-sculpted-sunglasses" data-name="Sculpted Sunglasses" data-price="175" data-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=sculpted-sunglasses">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80" alt="Sculpted Sunglasses">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes"><button class="qa-size selected">One Size</button></div>
+              <button class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=sculpted-sunglasses">Sculpted Sunglasses</a></div>
+            <div class="p-desc">Hand-milled Japanese acetate</div>
+            <div class="p-price">$175</div>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="p-card" data-product-id="t-canvas-weekender" data-name="Canvas Weekender" data-price="295" data-image="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=canvas-weekender">
+              <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&w=700&q=80" alt="Canvas Weekender">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes"><button class="qa-size selected">One Size</button></div>
+              <button class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=canvas-weekender">Canvas Weekender</a></div>
+            <div class="p-desc">Waxed cotton canvas & bridle leather</div>
+            <div class="p-price">$295</div>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="p-card" data-product-id="t-pleated-trouser" data-name="Tailored Pleated Trouser" data-price="198" data-image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=tailored-pleated-trouser">
+              <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80" alt="Tailored Pleated Trouser">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes"><button class="qa-size">30</button><button class="qa-size selected">32</button><button class="qa-size">34</button></div>
+              <button class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=tailored-pleated-trouser">Tailored Pleated Trouser</a></div>
+            <div class="p-desc">High-twist tropical wool</div>
+            <div class="p-price">$198</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. NEWSLETTER -->
+    <section class="newsletter wrap">
+      <h2>Stay in the know.</h2>
+      <p>New collections, quiet releases and stories from the studio.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit" class="btn btn-dark">Subscribe</button>
+      </form>
+      <div class="nl-msg"></div>
+    </section>
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <!-- Col 1 -->
+        <div class="footer-col-1">
+          <div class="footer-logo">NOVA FORM</div>
+          <p class="tag">Contemporary essentials, thoughtfully made.</p>
+          <div class="social-icons-row">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.175.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="category-new-arrivals.html">New Arrivals</a>
+          <a href="category-women.html">Women</a>
+          <a href="category-men.html">Men</a>
+          <a href="category-accessories.html">Accessories</a>
+          <a href="collections.html">Collections</a>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="footer-col">
+          <h4>About</h4>
+          <a href="about.html">Our Story</a>
+          <a href="journal.html">Journal</a>
+          <a href="about.html#materials">Materials</a>
+          <a href="about.html#stores">Stores</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="footer-col">
+          <h4>Help</h4>
+          <a href="shipping.html">Shipping</a>
+          <a href="returns.html">Returns</a>
+          <a href="faq.html">FAQ</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 NOVA FORM. All rights reserved.</span>
+        <div class="footer-selectors">
+          <select aria-label="Select Country">
+            <option>United States (USD $)</option>
+            <option>United Kingdom (GBP £)</option>
+            <option>European Union (EUR €)</option>
+            <option>Japan (JPY ¥)</option>
+          </select>
+          <select aria-label="Select Language">
+            <option>English</option>
+            <option>Français</option>
+            <option>Deutsch</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

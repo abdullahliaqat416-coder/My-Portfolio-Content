@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results — OBJECT MARKET</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a href="index.html" class="tb-logo">OBJECT<span>MARKET</span></a>
+      <div class="tb-search-container">
+        <form action="search.html" method="GET" class="tb-search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" name="q" id="search-input" placeholder="Search objects, brands, categories..." autocomplete="off">
+        </form>
+      </div>
+      <div class="tb-icons">
+        <a href="account.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>Account</a>
+        <a href="wishlist.html"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg>Wishlist</a>
+        <a href="cart.html"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>Cart<span class="tb-badge cart-count" style="display:none;">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding: 30px 0 80px;">
+    <div class="breadcrumb"><a href="index.html">Marketplace</a> &nbsp;/&nbsp; <span>Search</span></div>
+    
+    <div class="shop-head" style="margin-bottom:24px;">
+      <div>
+        <h1 id="search-heading">Results for: desk lamp</h1>
+        <span id="search-count" style="font-size:13px; color:var(--muted);">Found 2 matching objects</span>
+      </div>
+    </div>
+
+    <!-- Product Grid for Results -->
+    <div class="pgrid" id="search-grid">
+      <div class="pcard" data-id="om-orbit-lamp" data-brand="Kiln &amp; Co" data-name="Orbit Desk Lamp" data-price="148" data-image="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=600&q=80">
+        <button class="pcard-wish"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+        <div class="pcard-img"><a href="product.html?slug=orbit-desk-lamp"><img src="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=600&q=80" alt="Orbit Desk Lamp"></a></div>
+        <div class="pcard-brand">Kiln &amp; Co</div>
+        <div class="pcard-name"><a href="product.html?slug=orbit-desk-lamp">Orbit Desk Lamp</a></div>
+        <div class="pcard-rating"><span class="stars">★★★★★</span> 4.9 (128)</div>
+        <div class="pcard-bottom"><span class="pcard-price">$148</span><button class="pcard-add">Add</button></div>
+      </div>
+
+      <div class="pcard" data-id="om-grid-organizer" data-brand="Ferra Studio" data-name="Grid Organizer" data-price="58" data-image="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80">
+        <button class="pcard-wish"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+        <div class="pcard-img"><a href="product.html?slug=grid-organizer"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Grid Organizer"></a></div>
+        <div class="pcard-brand">Ferra Studio</div>
+        <div class="pcard-name"><a href="product.html?slug=grid-organizer">Grid Organizer</a></div>
+        <div class="pcard-rating"><span class="stars">★★★★☆</span> 4.5 (88)</div>
+        <div class="pcard-bottom"><span class="pcard-price">$58</span><button class="pcard-add">Add</button></div>
+      </div>
+    </div>
+
+    <!-- Empty State (shown when no matches) -->
+    <div id="no-results" style="display:none; text-align:center; padding:80px 0;">
+      <h2 style="font-size:22px; margin-bottom:12px;">Nothing matched your search.</h2>
+      <p style="color:var(--muted); margin-bottom:24px;">Suggestions: Check spelling, try another keyword, or explore categories.</p>
+      <div style="display:flex; justify-content:center; gap:12px;">
+        <a href="shop.html" class="btn btn-solid">Browse Categories</a>
+        <a href="index.html" class="btn btn-line">Home</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get('q');
+    if (query) {
+      document.getElementById('search-heading').textContent = `Results for: ${query}`;
+      document.getElementById('search-input').value = query;
+      if (query.toLowerCase().includes('xyz') || query.toLowerCase().includes('randomnone')) {
+        document.getElementById('search-grid').style.display = 'none';
+        document.getElementById('search-count').textContent = '0 objects found';
+        document.getElementById('no-results').style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

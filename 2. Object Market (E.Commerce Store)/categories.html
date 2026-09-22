@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories — OBJECT MARKET</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a href="index.html" class="tb-logo">OBJECT<span>MARKET</span></a>
+      <div class="tb-search-container">
+        <form action="search.html" method="GET" class="tb-search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" name="q" placeholder="Search objects, brands, categories..." autocomplete="off">
+        </form>
+      </div>
+      <div class="tb-icons">
+        <a href="account.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>Account</a>
+        <a href="wishlist.html"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg>Wishlist</a>
+        <a href="cart.html"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>Cart<span class="tb-badge cart-count" style="display:none;">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding: 40px 0 80px;">
+    <div class="breadcrumb"><a href="index.html">Marketplace</a> &nbsp;/&nbsp; <span>Categories</span></div>
+    
+    <div class="shop-head" style="margin-bottom: 32px;">
+      <h1>Object Categories</h1>
+      <p style="color:var(--muted);">Explore our catalog organized by utility and functional context.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:20px;">
+      <a href="shop.html?cat=desk" style="border:1px solid var(--line); background:var(--white); padding:24px;">
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:8px;">Desk Accessories</h3>
+        <p style="font-size:13px; color:var(--muted); margin-bottom:16px;">Task lights, mechanical keyboards, aluminum organizers, and leather desk pads.</p>
+        <span class="link">View Desk Objects →</span>
+      </a>
+
+      <a href="shop.html?cat=tech" style="border:1px solid var(--line); background:var(--white); padding:24px;">
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:8px;">Technology &amp; Audio</h3>
+        <p style="font-size:13px; color:var(--muted); margin-bottom:16px;">Reference headphones, magnetic charging docks, USB-C hubs, and wireless audio.</p>
+        <span class="link">View Tech Objects →</span>
+      </a>
+
+      <a href="shop.html?cat=travel" style="border:1px solid var(--line); background:var(--white); padding:24px;">
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:8px;">Travel Gear</h3>
+        <p style="font-size:13px; color:var(--muted); margin-bottom:16px;">Cordura commuter packs, insulated transit bottles, and modular packing pouches.</p>
+        <span class="link">View Travel Objects →</span>
+      </a>
+
+      <a href="shop.html?cat=home" style="border:1px solid var(--line); background:var(--white); padding:24px;">
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:8px;">Home &amp; Living</h3>
+        <p style="font-size:13px; color:var(--muted); margin-bottom:16px;">Ceramic pour-over drippers, minimalist wall clocks, and architectural stoneware.</p>
+        <span class="link">View Home Objects →</span>
+      </a>
+
+      <a href="shop.html?cat=edc" style="border:1px solid var(--line); background:var(--white); padding:24px;">
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:8px;">Everyday Carry</h3>
+        <p style="font-size:13px; color:var(--muted); margin-bottom:16px;">Titanium key organizers, leather card cases, and precision machined pens.</p>
+        <span class="link">View EDC Objects →</span>
+      </a>
+
+      <a href="brand.html" style="border:1px solid var(--line); background:var(--white); padding:24px;">
+        <h3 style="font-size:18px; font-weight:700; margin-bottom:8px;">Featured Brands</h3>
+        <p style="font-size:13px; color:var(--muted); margin-bottom:16px;">Independent engineering studios and design workshops from around the world.</p>
+        <span class="link">View Brands →</span>
+      </a>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

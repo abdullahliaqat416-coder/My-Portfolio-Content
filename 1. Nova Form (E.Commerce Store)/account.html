@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Account — NOVA FORM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Architectural Left-Side Spine (Fixed Rail) -->
+  <aside class="side-spine" aria-label="Atelier Navigation Spine">
+    <div class="spine-top">
+      <a href="index.html" class="spine-logo-mark" aria-label="Nova Form Home">N</a>
+      <div class="spine-3d-badge">3D ON</div>
+    </div>
+    <div class="spine-center">
+      <span class="spine-tagline">NOVA FORM <span>•</span> ARCHITECTURAL ATELIER</span>
+    </div>
+    <div class="spine-bottom">
+      <div class="spine-progress-wrap">
+        <div class="spine-progress-bar"></div>
+      </div>
+      <span class="spine-milestone">01 / 06</span>
+    </div>
+  </aside>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="logo">NOVA FORM</a>
+      <nav class="main-nav">
+        <a href="category-new-arrivals.html">New In</a>
+        <a href="category-women.html">Women</a>
+        <a href="category-men.html">Men</a>
+        <a href="category-accessories.html">Accessories</a>
+        <a href="collections.html">Collections</a>
+      </nav>
+      <div class="header-icons">
+        <button type="button" data-search-open><svg class="header-icon-svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+        <a href="account.html"><svg class="header-icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></a>
+        <a href="wishlist.html"><svg class="header-icon-svg" viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg><span class="badge wishlist-count" style="display:none;">0</span></a>
+        <button type="button" data-cart-open><svg class="header-icon-svg" viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg><span class="badge bag-count" style="display:none;">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding: 40px 0 80px;">
+    <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; <span>Account</span></div>
+    <div class="shop-head" style="margin-bottom: 40px;">
+      <h1>Studio Account</h1>
+      <p>Welcome back, Kaif. Manage your orders, saved addresses and preferences.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns: 260px 1fr; gap: 60px;">
+      <aside style="display:flex; flex-direction:column; gap:14px; font-size:14px;">
+        <a href="#" style="font-weight:600; color:var(--charcoal); border-bottom:1px solid var(--charcoal); padding-bottom:4px; width:fit-content;">Order History</a>
+        <a href="#" style="color:var(--taupe);">Addresses &amp; Billing</a>
+        <a href="wishlist.html" style="color:var(--taupe);">Wishlist</a>
+        <a href="#" style="color:var(--taupe);">Studio Preferences</a>
+        <a href="index.html" style="color:#B91C1C; margin-top:20px;">Sign Out</a>
+      </aside>
+
+      <div>
+        <h3 class="font-serif" style="font-size:24px; margin-bottom:20px;">Recent Orders</h3>
+        <div style="border:1px solid var(--border-light); padding:24px; background:var(--ivory-surface); margin-bottom:20px;">
+          <div style="display:flex; justify-content:space-between; margin-bottom:14px; font-size:13.5px;">
+            <div>
+              <span style="font-weight:600;">Order #NF-89214</span> &nbsp;·&nbsp;
+              <span style="color:var(--taupe);">September 12, 2026</span>
+            </div>
+            <span style="background:#E2E8F0; color:#334155; padding:3px 10px; font-size:11px; font-weight:600; text-transform:uppercase;">Delivered</span>
+          </div>
+          <div style="display:flex; gap:16px; align-items:center;">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=200&q=80" style="width:60px; height:72px; object-fit:cover;">
+            <div>
+              <div style="font-weight:500;">Form Wool Overshirt — Charcoal (M)</div>
+              <div style="font-size:13px; color:var(--taupe);">$189.00 · Tracking #1Z9999999999999999</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

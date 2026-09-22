@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search — Atelier Lumen</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false"><span class="menu-lines"><span></span><span></span><span></span></span></button>
+    <a href="index.html" class="logo">ATELIER <span>LUMEN</span></a>
+    <div class="header-actions">
+      <a href="search.html" class="icon-btn" aria-label="Search"><svg class="icon-line" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg></a>
+      <a href="wishlist.html" class="icon-btn" aria-label="Wishlist"><svg class="icon-line" viewBox="0 0 24 24"><path d="M12 20s-7-4.35-9.5-8.5C.7 8 2 4 6 4c2.2 0 3.6 1.3 4 2 .4-.7 1.8-2 4-2 4 0 5.3 4 3.5 7.5C19 15.65 12 20 12 20z"/></svg></a>
+      <a href="cart.html" class="icon-btn" aria-label="Bag"><span class="cart-count">2</span><svg class="icon-line" viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-overlay" id="nav-overlay">
+  <button class="nav-close" id="nav-close">Close</button>
+  <div class="nav-overlay-inner">
+    <div class="nav-primary">
+      <a href="new-collection.html">New Collection</a>
+      <a href="objects.html">Objects</a>
+      <a href="wear.html">Wear</a>
+      <a href="travel.html">Travel</a>
+      <a href="interiors.html">Home</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="limited-editions.html">Limited Editions</a>
+      <a href="lookbook.html">Lookbook</a>
+    </div>
+    <div class="nav-side">
+      <div><span class="nav-label">Studio</span>
+        <div class="nav-secondary"><a href="journal.html">Journal</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      </div>
+      <div><span class="nav-label">Your Account</span>
+        <div class="nav-utility"><a href="search.html">Search</a><a href="wishlist.html">Wishlist</a><a href="cart.html">Cart</a><a href="checkout.html">Checkout</a></div>
+      </div>
+      <div class="nav-meta"><p>Atelier Lumen — Paris / Kyoto</p><p>Monday—Saturday, 10—19h</p><p>hello@atelierlumen.com</p></div>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="search-hero">
+    <div class="container">
+      <span class="eyebrow">Search the Atelier</span>
+      <div class="search-input-wrap">
+        <svg class="icon-line" viewBox="0 0 24 24" style="width:24px;height:24px;"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+        <input type="text" placeholder="Search products, journal, materials…" autofocus>
+      </div>
+      <div class="search-suggestions">
+        <a href="wear.html" class="suggestion-chip">Linen Overshirt</a>
+        <a href="objects.html" class="suggestion-chip">Stoneware</a>
+        <a href="travel.html" class="suggestion-chip">Weekender</a>
+        <a href="interiors.html" class="suggestion-chip">Bed Linen</a>
+        <a href="limited-editions.html" class="suggestion-chip">Limited Editions</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div><span class="eyebrow">Popular Right Now</span><h2 style="margin-top:16px;">You Might Be Looking For</h2></div>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph ph-clay" data-label="Espresso Linen Overshirt" style="aspect-ratio:3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="linen-overshirt" data-title="Espresso Linen Overshirt" data-price="420" data-cat="No. 03 — Wear">Quick Add</button>
+          </div>
+          <div class="product-info"><div><h3><a href="product.html">Espresso Linen Overshirt</a></h3><span class="product-code">No. 03 &mdash; Wear</span></div><span class="price">$420</span></div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="Hand-Thrown Stoneware Vessel" style="aspect-ratio:3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="stoneware-vessel" data-title="Hand-Thrown Stoneware Vessel" data-price="310" data-cat="No. 01 — Objects">Quick Add</button>
+          </div>
+          <div class="product-info"><div><h3><a href="product.html">Hand-Thrown Stoneware Vessel</a></h3><span class="product-code">No. 01 &mdash; Objects</span></div><span class="price">$310</span></div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph ph-sage" data-label="Waxed Canvas Weekender" style="aspect-ratio:3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="waxed-weekender" data-title="Waxed Canvas Weekender" data-price="690" data-cat="No. 04 — Travel">Quick Add</button>
+          </div>
+          <div class="product-info"><div><h3><a href="product.html">Waxed Canvas Weekender</a></h3><span class="product-code">No. 04 &mdash; Travel</span></div><span class="price">$690</span></div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph ph-terracotta" data-label="Merino Bed Throw" style="aspect-ratio:3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="bed-throw" data-title="Merino Bed Throw" data-price="460" data-cat="No. 09 — Home">Quick Add</button>
+          </div>
+          <div class="product-info"><div><h3><a href="product.html">Merino Bed Throw</a></h3><span class="product-code">No. 09 &mdash; Home</span></div><span class="price">$460</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="shop.html">Complete Catalog</a>
+      <a href="new-collection.html">New Collection</a>
+      <a href="lookbook.html">Lookbook</a>
+      <a href="limited-editions.html">Limited Editions</a>
+      <a href="journal.html">Journal</a>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <a href="objects.html">Objects &amp; Stoneware</a>
+      <a href="wear.html">Garments &amp; Knitwear</a>
+      <a href="travel.html">Travel Goods</a>
+      <a href="interiors.html">Home &amp; Textiles</a>
+      <a href="accessories.html">Accessories</a>
+    </div>
+    <div class="footer-col">
+      <h4>Client Care</h4>
+      <a href="contact.html">Studio &amp; Concierge</a>
+      <a href="about.html">About the Atelier</a>
+      <a href="shipping.html">Shipping &amp; Duties</a>
+      <a href="returns.html">Returns &amp; Exchanges</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+    <div class="footer-col footer-newsletter">
+      <h4>Correspondence</h4>
+      <p>Receive invitations to private studio previews and limited archival releases.</p>
+      <form>
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="social-circles">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="Pinterest">PT</a>
+      <a href="contact.html" aria-label="Studio Mail">@</a>
+    </div>
+    <p class="footer-legal">&copy; 2026 Atelier Lumen Studio. Paris &middot; Kyoto. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

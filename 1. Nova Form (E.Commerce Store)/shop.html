@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products — NOVA FORM</title>
+  <meta name="description" content="Explore the complete collection of considered essentials, knitwear, tailoring, and leather goods.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Architectural Left-Side Spine (Fixed Rail) -->
+  <aside class="side-spine" aria-label="Atelier Navigation Spine">
+    <div class="spine-top">
+      <a href="index.html" class="spine-logo-mark" aria-label="Nova Form Home">N</a>
+      <div class="spine-3d-badge">3D ON</div>
+    </div>
+    <div class="spine-center">
+      <span class="spine-tagline">NOVA FORM <span>•</span> ARCHITECTURAL ATELIER</span>
+    </div>
+    <div class="spine-bottom">
+      <div class="spine-progress-wrap">
+        <div class="spine-progress-bar"></div>
+      </div>
+      <span class="spine-milestone">01 / 06</span>
+    </div>
+  </aside>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="logo">NOVA FORM</a>
+      <nav class="main-nav">
+        <a href="category-new-arrivals.html">New In</a>
+        <a href="category-women.html">Women</a>
+        <a href="category-men.html">Men</a>
+        <a href="category-accessories.html">Accessories</a>
+        <a href="collections.html">Collections</a>
+      </nav>
+      <div class="header-icons">
+        <button type="button" data-search-open aria-label="Open Search">
+          <svg class="header-icon-svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <a href="account.html" aria-label="Account">
+          <svg class="header-icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+        </a>
+        <a href="wishlist.html" aria-label="Wishlist">
+          <svg class="header-icon-svg" viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg>
+          <span class="badge wishlist-count" style="display:none;">0</span>
+        </a>
+        <button type="button" data-cart-open aria-label="Shopping Bag">
+          <svg class="header-icon-svg" viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+          <span class="badge bag-count" style="display:none;">0</span>
+        </button>
+        <button type="button" class="burger-btn" data-mobile-menu-open aria-label="Open Menu">
+          <svg class="header-icon-svg" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-Width Search Overlay -->
+  <div class="search-overlay">
+    <div class="search-panel">
+      <div class="wrap">
+        <div class="search-panel-top">
+          <span class="search-panel-title">Search Nova Form</span>
+          <button type="button" class="search-close" data-search-close>Close ✕</button>
+        </div>
+        <form action="search.html" method="GET" class="search-input-wrap">
+          <input type="text" name="q" placeholder="Search products, collections, materials..." autocomplete="off">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-head">
+      <span class="logo">NOVA FORM</span>
+      <button type="button" data-mobile-menu-close style="font-size:18px;">✕</button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="category-new-arrivals.html">New In</a>
+      <a href="category-women.html">Women</a>
+      <a href="category-men.html">Men</a>
+      <a href="category-accessories.html">Accessories</a>
+      <a href="collections.html">Collections</a>
+      <a href="shop.html">All Products</a>
+    </nav>
+  </aside>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="cart-drawer-overlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-head">
+        <h3>Shopping Bag</h3>
+        <button type="button" class="cart-drawer-close" data-cart-close>Close ✕</button>
+      </div>
+      <div class="cart-drawer-items"></div>
+      <div class="cart-drawer-footer">
+        <div class="cd-summary-row"><span>Subtotal</span><span class="cd-subtotal">$0.00</span></div>
+        <div class="cd-summary-row"><span>Shipping</span><span class="cd-shipping">Calculated at checkout</span></div>
+        <div class="cd-summary-row total"><span>Estimated Total</span><span class="cd-total">$0.00</span></div>
+        <div class="cd-cta-group">
+          <a href="checkout.html" class="btn btn-dark" style="width:100%;">Proceed to Checkout</a>
+          <a href="cart.html" class="link-underline" style="justify-content:center; padding-top:6px;">View Full Bag</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="wrap breadcrumb">
+      <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Shop All</span>
+    </div>
+
+    <div class="wrap shop-head">
+      <h1>The Complete Collection</h1>
+      <p>Quiet tailoring, tactile knitwear and structured leather goods created for enduring daily wear.</p>
+    </div>
+
+    <div class="wrap shop-toolbar">
+      <div class="shop-count">Showing 12 considered pieces</div>
+      <div class="shop-toolbar-controls">
+        <button type="button" class="filter-drawer-btn" id="filter-toggle">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="20" y2="12"/><line x1="14" y1="18" x2="20" y2="18"/></svg>
+          Filter &amp; Refine
+        </button>
+        <select aria-label="Sort products">
+          <option>Sort: Curated</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+          <option>Newest Additions</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="wrap shop-layout">
+      <!-- Filters Sidebar -->
+      <aside class="shop-filters-sidebar" id="filter-sidebar">
+        <div class="filter-group">
+          <h4>Category</h4>
+          <label><input type="checkbox" checked> All Objects (12)</label>
+          <label><input type="checkbox"> Outerwear (3)</label>
+          <label><input type="checkbox"> Knitwear &amp; Shirts (4)</label>
+          <label><input type="checkbox"> Leather &amp; Bags (3)</label>
+          <label><input type="checkbox"> Footwear (2)</label>
+        </div>
+
+        <div class="filter-group">
+          <h4>Size</h4>
+          <div class="size-chips">
+            <button type="button" class="size-chip">XS</button>
+            <button type="button" class="size-chip active">S</button>
+            <button type="button" class="size-chip active">M</button>
+            <button type="button" class="size-chip">L</button>
+            <button type="button" class="size-chip">XL</button>
+            <button type="button" class="size-chip">One Size</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h4>Color Palette</h4>
+          <div class="color-swatches">
+            <button type="button" class="color-swatch-btn active" style="background:#1C1917;" title="Charcoal"></button>
+            <button type="button" class="color-swatch-btn" style="background:#FAF8F5;" title="Ivory"></button>
+            <button type="button" class="color-swatch-btn" style="background:#78716C;" title="Stone"></button>
+            <button type="button" class="color-swatch-btn" style="background:#575949;" title="Olive"></button>
+            <button type="button" class="color-swatch-btn" style="background:#A85A3C;" title="Clay"></button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h4>Price</h4>
+          <label><input type="checkbox"> Under $150</label>
+          <label><input type="checkbox" checked> $150 – $250</label>
+          <label><input type="checkbox"> $250 and above</label>
+        </div>
+
+        <div class="filter-group">
+          <h4>Availability</h4>
+          <label><input type="checkbox" checked> In Stock</label>
+          <label><input type="checkbox"> Studio Pre-Order</label>
+        </div>
+      </aside>
+
+      <!-- Products Grid -->
+      <div class="product-grid">
+
+        <div class="p-card" data-product-id="form-wool-overshirt" data-id="p1" data-name="Form Wool Overshirt" data-price="189" data-image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=form-wool-overshirt">
+              <img class="img-a" src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Form Wool Overshirt">
+              <img class="img-b" src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=800&q=80" alt="Form Wool Overshirt Model">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes"><button class="qa-size">XS</button><button class="qa-size selected">S</button><button class="qa-size">M</button><button class="qa-size">L</button><button class="qa-size">XL</button></div>
+              <button class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=form-wool-overshirt">Form Wool Overshirt</a></div>
+            <div class="p-desc">Double-faced Italian boiled wool</div>
+            <div class="p-bottom-row"><div class="p-price">$189</div></div>
+          </div>
+        </div>
+
+        <div class="p-card" data-product-id="structured-leather-tote" data-id="p2" data-name="Structured Leather Tote" data-price="240" data-image="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=structured-leather-tote">
+              <img class="img-a" src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80" alt="Structured Leather Tote">
+              <img class="img-b" src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80" alt="Structured Leather Tote Inside">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes"><button class="qa-size selected">One Size</button></div>
+              <button class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=structured-leather-tote">Structured Leather Tote</a></div>
+            <div class="p-desc">Vegetable-tanned saddle leather</div>
+            <div class="p-bottom-row"><div class="p-price">$240</div></div>
+          </div>
+        </div>
+
+        <div class="p-card" data-product-id="studio-knit-polo" data-id="p3" data-name="Studio Knit Polo" data-price="125" data-image="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=studio-knit-polo">
+              <img class="img-a" src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=80" alt="Studio Knit Polo">
+              <img class="img-b" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Studio Knit Polo Detail">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes"><button class="qa-size">S</button><button class="qa-size selected">M</button><button class="qa-size">L</button></div>
+              <button class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=studio-knit-polo">Studio Knit Polo</a></div>
+            <div class="p-desc">Fine-gauge Egyptian cotton</div>
+            <div class="p-bottom-row"><div class="p-price">$125</div></div>
+          </div>
+        </div>
+
+        <div class="p-card" data-product-id="minimal-runner" data-id="p4" data-name="Minimal Runner" data-price="160" data-image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=minimal-runner">
+              <img class="img-a" src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80" alt="Minimal Runner">
+              <img class="img-b" src="https://images.unsplash.com/photo-1525507119028-ad39799d0b3d?auto=format&fit=crop&w=800&q=80" alt="Minimal Runner Sole">
+            </a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel">
+              <span class="qa-title">Select Size</span>
+              <div class="qa-sizes"><button class="qa-size">40</button><button class="qa-size selected">41</button><button class="qa-size">42</button></div>
+              <button class="qa-add-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=minimal-runner">Minimal Runner</a></div>
+            <div class="p-desc">Recycled mesh &amp; calf suede upper</div>
+            <div class="p-bottom-row"><div class="p-price">$160</div></div>
+          </div>
+        </div>
+
+        <div class="p-card" data-product-id="t-oversized-jacket" data-name="Oversized Shirt Jacket" data-price="265" data-image="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=oversized-shirt-jacket"><img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=700&q=80" alt="Oversized Shirt Jacket"></a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel"><div class="qa-sizes"><button class="qa-size selected">M</button></div><button class="qa-add-btn">Quick Add</button></div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=oversized-shirt-jacket">Oversized Shirt Jacket</a></div>
+            <div class="p-desc">Heavyweight organic twill</div>
+            <div class="p-price">$265</div>
+          </div>
+        </div>
+
+        <div class="p-card" data-product-id="t-leather-ankle-boot" data-name="Leather Ankle Boot" data-price="310" data-image="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=leather-ankle-boot"><img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=700&q=80" alt="Leather Ankle Boot"></a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel"><div class="qa-sizes"><button class="qa-size selected">40</button></div><button class="qa-add-btn">Quick Add</button></div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=leather-ankle-boot">Leather Ankle Boot</a></div>
+            <div class="p-desc">Calfskin with Goodyear welt</div>
+            <div class="p-price">$310</div>
+          </div>
+        </div>
+
+        <div class="p-card" data-product-id="t-cashmere-scarf" data-name="Ribbed Cashmere Scarf" data-price="145" data-image="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=ribbed-cashmere-scarf"><img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=700&q=80" alt="Cashmere Scarf"></a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel"><div class="qa-sizes"><button class="qa-size selected">One Size</button></div><button class="qa-add-btn">Quick Add</button></div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=ribbed-cashmere-scarf">Ribbed Cashmere Scarf</a></div>
+            <div class="p-desc">100% Mongolian grade-A cashmere</div>
+            <div class="p-price">$145</div>
+          </div>
+        </div>
+
+        <div class="p-card" data-product-id="t-woven-belt-bag" data-name="Woven Belt Bag" data-price="165" data-image="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=woven-belt-bag"><img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?auto=format&fit=crop&w=700&q=80" alt="Woven Belt Bag"></a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel"><div class="qa-sizes"><button class="qa-size selected">One Size</button></div><button class="qa-add-btn">Quick Add</button></div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=woven-belt-bag">Woven Belt Bag</a></div>
+            <div class="p-desc">Intrecciato handwoven nappa</div>
+            <div class="p-price">$165</div>
+          </div>
+        </div>
+
+        <div class="p-card" data-product-id="t-relaxed-linen-shirt" data-name="Relaxed Linen Shirt" data-price="135" data-image="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=relaxed-linen-shirt"><img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=700&q=80" alt="Relaxed Linen Shirt"></a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel"><div class="qa-sizes"><button class="qa-size selected">M</button></div><button class="qa-add-btn">Quick Add</button></div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=relaxed-linen-shirt">Relaxed Linen Shirt</a></div>
+            <div class="p-desc">Garment-washed Normandy flax</div>
+            <div class="p-price">$135</div>
+          </div>
+        </div>
+
+        <div class="p-card" data-product-id="t-sculpted-sunglasses" data-name="Sculpted Sunglasses" data-price="175" data-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=sculpted-sunglasses"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80" alt="Sculpted Sunglasses"></a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel"><div class="qa-sizes"><button class="qa-size selected">One Size</button></div><button class="qa-add-btn">Quick Add</button></div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=sculpted-sunglasses">Sculpted Sunglasses</a></div>
+            <div class="p-desc">Hand-milled Japanese acetate</div>
+            <div class="p-price">$175</div>
+          </div>
+        </div>
+
+        <div class="p-card" data-product-id="t-canvas-weekender" data-name="Canvas Weekender" data-price="295" data-image="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=canvas-weekender"><img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&w=700&q=80" alt="Canvas Weekender"></a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel"><div class="qa-sizes"><button class="qa-size selected">One Size</button></div><button class="qa-add-btn">Quick Add</button></div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=canvas-weekender">Canvas Weekender</a></div>
+            <div class="p-desc">Waxed cotton canvas &amp; bridle leather</div>
+            <div class="p-price">$295</div>
+          </div>
+        </div>
+
+        <div class="p-card" data-product-id="t-pleated-trouser" data-name="Tailored Pleated Trouser" data-price="198" data-image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80">
+          <div class="p-media">
+            <a href="product.html?slug=tailored-pleated-trouser"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80" alt="Tailored Pleated Trouser"></a>
+            <button class="p-wishlist" type="button" aria-label="Add to Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="quick-add-panel"><div class="qa-sizes"><button class="qa-size selected">32</button></div><button class="qa-add-btn">Quick Add</button></div>
+          </div>
+          <div class="p-info">
+            <div class="p-name"><a href="product.html?slug=tailored-pleated-trouser">Tailored Pleated Trouser</a></div>
+            <div class="p-desc">High-twist tropical wool</div>
+            <div class="p-price">$198</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col-1">
+          <div class="footer-logo">NOVA FORM</div>
+          <p class="tag">Contemporary essentials, thoughtfully made.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="category-new-arrivals.html">New Arrivals</a>
+          <a href="category-women.html">Women</a>
+          <a href="category-men.html">Men</a>
+          <a href="category-accessories.html">Accessories</a>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <a href="about.html">Our Story</a>
+          <a href="journal.html">Journal</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <a href="shipping.html">Shipping</a>
+          <a href="returns.html">Returns</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 NOVA FORM. All rights reserved.</span>
+        <span>Privacy · Terms</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Mobile filter toggle
+    const filterBtn = document.getElementById('filter-toggle');
+    const filterSidebar = document.getElementById('filter-sidebar');
+    if (filterBtn && filterSidebar) {
+      filterBtn.addEventListener('click', () => {
+        filterSidebar.classList.toggle('mobile-open');
+      });
+    }
+  </script>
+</body>
+</html>

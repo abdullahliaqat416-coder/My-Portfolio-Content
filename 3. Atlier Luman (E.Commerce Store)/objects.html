@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Objects — Atelier Lumen</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false"><span class="menu-lines"><span></span><span></span><span></span></span></button>
+    <a href="index.html" class="logo">ATELIER <span>LUMEN</span></a>
+    <div class="header-actions">
+      <a href="search.html" class="icon-btn" aria-label="Search"><svg class="icon-line" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg></a>
+      <a href="wishlist.html" class="icon-btn" aria-label="Wishlist"><svg class="icon-line" viewBox="0 0 24 24"><path d="M12 20s-7-4.35-9.5-8.5C.7 8 2 4 6 4c2.2 0 3.6 1.3 4 2 .4-.7 1.8-2 4-2 4 0 5.3 4 3.5 7.5C19 15.65 12 20 12 20z"/></svg></a>
+      <a href="cart.html" class="icon-btn" aria-label="Bag"><span class="cart-count">2</span><svg class="icon-line" viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-overlay" id="nav-overlay">
+  <button class="nav-close" id="nav-close">Close</button>
+  <div class="nav-overlay-inner">
+    <div class="nav-primary">
+      <a href="new-collection.html">New Collection</a>
+      <a href="objects.html">Objects</a>
+      <a href="wear.html">Wear</a>
+      <a href="travel.html">Travel</a>
+      <a href="interiors.html">Home</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="limited-editions.html">Limited Editions</a>
+      <a href="lookbook.html">Lookbook</a>
+    </div>
+    <div class="nav-side">
+      <div><span class="nav-label">Studio</span>
+        <div class="nav-secondary"><a href="journal.html">Journal</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      </div>
+      <div><span class="nav-label">Your Account</span>
+        <div class="nav-utility"><a href="search.html">Search</a><a href="wishlist.html">Wishlist</a><a href="cart.html">Cart</a><a href="checkout.html">Checkout</a></div>
+      </div>
+      <div class="nav-meta"><p>Atelier Lumen — Paris / Kyoto</p><p>Monday—Saturday, 10—19h</p><p>hello@atelierlumen.com</p></div>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Category</span>
+      <h1>Objects</h1>
+      <p>Stoneware, glass, brass and oak — small useful things for the table and shelf, thrown or cast one piece at a time in the studio's back workshop.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="filter-bar">
+      <div class="filter-chips">
+        <button class="filter-chip active">All Objects</button>
+        <button class="filter-chip">Ceramics</button>
+        <button class="filter-chip">Glass</button>
+        <button class="filter-chip">Brass &amp; Metal</button>
+        <button class="filter-chip">Wood</button>
+      </div>
+      <span class="filter-count">16 pieces</span>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="Hand-Thrown Stoneware Vessel" style="aspect-ratio:3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="stoneware-vessel" data-title="Hand-Thrown Stoneware Vessel" data-price="310" data-cat="No. 01 — Ceramics">Quick Add</button>
+          </div>
+          <div class="product-info"><div><h3><a href="product.html">Hand-Thrown Stoneware Vessel</a></h3><span class="product-code">No. 01 &mdash; Ceramics</span></div><span class="price">$310</span></div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph ph-terracotta" data-label="Hand-Blown Glass Carafe" style="aspect-ratio:3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="glass-carafe" data-title="Hand-Blown Glass Carafe" data-price="220" data-cat="No. 10 — Glass">Quick Add</button>
+          </div>
+          <div class="product-info"><div><h3><a href="product.html">Hand-Blown Glass Carafe</a></h3><span class="product-code">No. 10 &mdash; Glass</span></div><span class="price">$220</span></div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph ph-espresso" data-label="Brass Candle Holder, Tall" style="aspect-ratio:3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="brass-candle" data-title="Brass Candle Holder, Tall" data-price="140" data-cat="No. 21 — Brass">Quick Add</button>
+          </div>
+          <div class="product-info"><div><h3><a href="product.html">Brass Candle Holder, Tall</a></h3><span class="product-code">No. 21 &mdash; Brass</span></div><span class="price">$140</span></div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="Oak Serving Board" style="aspect-ratio:3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="oak-board" data-title="Oak Serving Board" data-price="185" data-cat="No. 18 — Wood">Quick Add</button>
+          </div>
+          <div class="product-info"><div><h3><a href="product.html">Oak Serving Board</a></h3><span class="product-code">No. 18 &mdash; Wood</span></div><span class="price">$185</span></div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph ph-sage" data-label="Glazed Stoneware Bowl Set" style="aspect-ratio:3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="bowl-set" data-title="Glazed Stoneware Bowl Set" data-price="260" data-cat="No. 02 — Ceramics">Quick Add</button>
+          </div>
+          <div class="product-info"><div><h3><a href="product.html">Glazed Stoneware Bowl Set</a></h3><span class="product-code">No. 02 &mdash; Ceramics</span></div><span class="price">$260</span></div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph ph-clay" data-label="Amber Glass Tumbler, Set of Four" style="aspect-ratio:3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="glass-tumbler" data-title="Amber Glass Tumbler, Set of Four" data-price="150" data-cat="No. 11 — Glass">Quick Add</button>
+          </div>
+          <div class="product-info"><div><h3><a href="product.html">Amber Glass Tumbler, Set of Four</a></h3><span class="product-code">No. 11 &mdash; Glass</span></div><span class="price">$150</span></div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph ph-espresso" data-label="Brass Incense Dish" style="aspect-ratio:3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="incense-dish" data-title="Brass Incense Dish" data-price="85" data-cat="No. 22 — Brass">Quick Add</button>
+          </div>
+          <div class="product-info"><div><h3><a href="product.html">Brass Incense Dish</a></h3><span class="product-code">No. 22 &mdash; Brass</span></div><span class="price">$85</span></div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-wrap">
+            <a href="product.html"><div class="ph" data-label="Walnut Bookends, Pair" style="aspect-ratio:3/4;"></div></a>
+            <button class="wishlist-toggle-btn" aria-label="Add to Wishlist">&#9825;</button>
+            <button class="quick-add-btn" data-id="walnut-bookends" data-title="Walnut Bookends, Pair" data-price="165" data-cat="No. 19 — Wood">Quick Add</button>
+          </div>
+          <div class="product-info"><div><h3><a href="product.html">Walnut Bookends, Pair</a></h3><span class="product-code">No. 19 &mdash; Wood</span></div><span class="price">$165</span></div>
+        </div>
+      </div>
+
+      <div class="materials-note">
+        <h4>A Note on Material</h4>
+        <p>Every object is finished by hand and will carry small variations in glaze, grain or bubble — this is not imperfection but evidence that a person, not a mould alone, made your piece. Expect gentle change with age; oak will darken, brass will patina, glass will collect the light differently each year.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="shop.html">Complete Catalog</a>
+      <a href="new-collection.html">New Collection</a>
+      <a href="lookbook.html">Lookbook</a>
+      <a href="limited-editions.html">Limited Editions</a>
+      <a href="journal.html">Journal</a>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <a href="objects.html">Objects &amp; Stoneware</a>
+      <a href="wear.html">Garments &amp; Knitwear</a>
+      <a href="travel.html">Travel Goods</a>
+      <a href="interiors.html">Home &amp; Textiles</a>
+      <a href="accessories.html">Accessories</a>
+    </div>
+    <div class="footer-col">
+      <h4>Client Care</h4>
+      <a href="contact.html">Studio &amp; Concierge</a>
+      <a href="about.html">About the Atelier</a>
+      <a href="shipping.html">Shipping &amp; Duties</a>
+      <a href="returns.html">Returns &amp; Exchanges</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+    <div class="footer-col footer-newsletter">
+      <h4>Correspondence</h4>
+      <p>Receive invitations to private studio previews and limited archival releases.</p>
+      <form>
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="social-circles">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="Pinterest">PT</a>
+      <a href="contact.html" aria-label="Studio Mail">@</a>
+    </div>
+    <p class="footer-legal">&copy; 2026 Atelier Lumen Studio. Paris &middot; Kyoto. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

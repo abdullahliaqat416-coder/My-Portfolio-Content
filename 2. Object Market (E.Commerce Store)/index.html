@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OBJECT MARKET — Better objects for everyday life.</title>
+  <meta name="description" content="A curated marketplace for modern objects, desk tools, travel gear, audio, and architectural home accessories.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. TOP UTILITY HEADER -->
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <button type="button" class="tb-burger" data-cat-open aria-label="Open Categories">
+        <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.8">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <a href="index.html" class="tb-logo">OBJECT<span>MARKET</span></a>
+
+      <!-- Large Prominent Search Field -->
+      <div class="tb-search-container">
+        <form action="search.html" method="GET" class="tb-search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" name="q" placeholder="Search objects, brands, categories..." autocomplete="off">
+        </form>
+        <div class="tb-search-dropdown">
+          <div class="tb-sug-title">Recent Searches</div>
+          <div class="tb-sug-row">
+            <a href="search.html?q=Desk+Lamp" class="tb-sug-item">Desk Lamp</a>
+            <a href="search.html?q=Mechanical+Keyboard" class="tb-sug-item">Mechanical Keyboard</a>
+            <a href="search.html?q=Headphones" class="tb-sug-item">Studio Headphones</a>
+          </div>
+          <div class="tb-sug-title">Popular Categories</div>
+          <div class="tb-sug-row">
+            <a href="shop.html?category=desk" class="tb-sug-item">Desk Organization</a>
+            <a href="shop.html?category=tech" class="tb-sug-item">Wireless Audio</a>
+            <a href="shop.html?category=travel" class="tb-sug-item">Carry Pouches</a>
+          </div>
+          <div class="tb-sug-title">Featured Brands</div>
+          <div class="tb-sug-row">
+            <a href="brand.html?brand=kiln-co" class="tb-sug-item">Kiln &amp; Co</a>
+            <a href="brand.html?brand=ferra-studio" class="tb-sug-item">Ferra Studio</a>
+            <a href="brand.html?brand=northline" class="tb-sug-item">Northline</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Utility Actions -->
+      <div class="tb-icons">
+        <a href="account.html" aria-label="Account">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+          Account
+        </a>
+        <a href="wishlist.html" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg>
+          Wishlist
+          <span class="tb-badge wish-count" style="display:none;">0</span>
+        </a>
+        <button type="button" data-cart-open aria-label="Cart">
+          <svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+          Cart
+          <span class="tb-badge cart-count" style="display:none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Category Drawer -->
+  <div class="cat-drawer-overlay" data-cat-close></div>
+  <aside class="cat-drawer">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+      <span class="tb-logo">OBJECT<span>MARKET</span></span>
+      <button class="cat-drawer-close" data-cat-close>✕</button>
+    </div>
+    <div style="padding: 10px 0;">
+      <a href="shop.html">All Objects</a>
+      <a href="shop.html?category=new">New Arrivals</a>
+      <a href="shop.html?category=best">Best Sellers</a>
+      <a href="shop.html?category=desk">Desk &amp; Work</a>
+      <a href="shop.html?category=tech">Tech &amp; Audio</a>
+      <a href="shop.html?category=travel">Travel Gear</a>
+      <a href="shop.html?category=home">Home &amp; Lighting</a>
+      <a href="brand.html">Featured Brands</a>
+    </div>
+  </aside>
+
+  <!-- Compact Right Cart Drawer -->
+  <div class="cart-drawer-overlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-head">
+        <h3>Your Cart</h3>
+        <button type="button" data-cart-close style="font-size:12px; font-weight:700; text-transform:uppercase;">Close ✕</button>
+      </div>
+      <div class="cart-drawer-items"></div>
+      <div class="cart-drawer-footer">
+        <div class="cd-summary-row"><span>Subtotal</span><span class="cd-subtotal">$0.00</span></div>
+        <div class="cd-summary-row"><span>Estimated Shipping</span><span>Standard ($12.00)</span></div>
+        <div class="cd-summary-row total"><span>Total</span><span class="cd-total">$0.00</span></div>
+        <a href="checkout.html" class="btn btn-solid" style="width:100%; margin-bottom:8px;">Checkout</a>
+        <a href="cart.html" class="link" style="display:block; text-align:center; font-size:12px;">View Cart Details →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. PERMANENT LEFT SIDEBAR + MAIN LAYOUT -->
+  <div class="market-layout">
+
+    <aside class="category-rail">
+      <h5>All Objects</h5>
+      <a href="shop.html" class="active">All Categories</a>
+      <a href="shop.html?sort=new">New Arrivals</a>
+      <a href="shop.html?sort=best">Best Sellers</a>
+
+      <h5>Desk</h5>
+      <a href="shop.html?cat=desk-accessories">Desk Accessories</a>
+      <a href="shop.html?cat=keyboards">Keyboards</a>
+      <a href="shop.html?cat=lighting">Lighting</a>
+      <a href="shop.html?cat=organization">Organization</a>
+
+      <h5>Tech</h5>
+      <a href="shop.html?cat=audio">Audio</a>
+      <a href="shop.html?cat=charging">Charging</a>
+      <a href="shop.html?cat=smarthome">Smart Home</a>
+      <a href="shop.html?cat=cables">Accessories</a>
+
+      <h5>Travel</h5>
+      <a href="shop.html?cat=bags">Bags &amp; Packs</a>
+      <a href="shop.html?cat=tools">Travel Tools</a>
+      <a href="shop.html?cat=bottles">Bottles</a>
+      <a href="shop.html?cat=edc">Everyday Carry</a>
+
+      <h5>Home</h5>
+      <a href="shop.html?cat=kitchen">Kitchen Tools</a>
+      <a href="shop.html?cat=decor">Decor</a>
+      <a href="shop.html?cat=storage">Storage</a>
+      <a href="shop.html?cat=homelighting">Lighting</a>
+
+      <h5>Brands</h5>
+      <a href="brand.html?brand=kiln-co">Kiln &amp; Co</a>
+      <a href="brand.html?brand=ferra-studio">Ferra Studio</a>
+      <a href="brand.html?brand=acoustic-lab">Acoustic Lab</a>
+      <a href="brand.html?brand=northline">Northline</a>
+      <a href="brand.html?brand=halcyon">Halcyon Goods</a>
+    </aside>
+
+    <main class="main-col">
+
+      <!-- 3. HERO BANNER -->
+      <section class="hero-banner">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1600&q=80" alt="Object Market Architectural Setup">
+        <div class="hero-copy">
+          <span class="eyebrow">Catalogue 2026</span>
+          <h1>Better objects for everyday life.</h1>
+          <p>Curated tools, technology and design made to earn their place.</p>
+          <div class="hero-ctas">
+            <a href="shop.html" class="btn btn-solid">Shop New Arrivals</a>
+            <a href="shop.html" class="btn btn-line">Browse Categories</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. THREE PROMOTIONAL TILES -->
+      <section class="promo-row">
+        <a href="shop.html?cat=desk" class="promo-tile">
+          <img src="https://images.unsplash.com/photo-1593062096033-9a26b09da705?auto=format&fit=crop&w=700&q=80" alt="Desk Edit">
+          <div class="promo-tile-content">
+            <div class="promo-tile-cat">Workplace</div>
+            <div class="promo-tile-label">DESK EDIT — Tools for better work <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          </div>
+        </a>
+
+        <a href="shop.html?cat=travel" class="promo-tile">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80" alt="Travel Gear">
+          <div class="promo-tile-content">
+            <div class="promo-tile-cat">Transit</div>
+            <div class="promo-tile-label">TRAVEL — Built for moving <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          </div>
+        </a>
+
+        <a href="shop.html?cat=home" class="promo-tile">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=700&q=80" alt="Home Objects">
+          <div class="promo-tile-content">
+            <div class="promo-tile-cat">Living</div>
+            <div class="promo-tile-label">HOME — Objects with purpose <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          </div>
+        </a>
+      </section>
+
+      <!-- 5. PRODUCT COLLECTION ONE: NEW & NOTEWORTHY -->
+      <section class="section">
+        <div class="section-head">
+          <h2>New &amp; Noteworthy</h2>
+          <a href="shop.html" class="link">View all →</a>
+        </div>
+        <div class="pgrid">
+
+          <!-- 1. Orbit Desk Lamp -->
+          <div class="pcard" data-id="om-orbit-lamp" data-brand="Kiln &amp; Co" data-name="Orbit Desk Lamp" data-price="148" data-image="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish" type="button" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img">
+              <a href="product.html?slug=orbit-desk-lamp"><img src="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=600&q=80" alt="Orbit Desk Lamp"></a>
+            </div>
+            <div class="pcard-brand">Kiln &amp; Co</div>
+            <div class="pcard-name"><a href="product.html?slug=orbit-desk-lamp">Orbit Desk Lamp</a></div>
+            <div class="pcard-rating"><span class="stars">★★★★★</span> 4.9 (128)</div>
+            <div class="pcard-bottom">
+              <span class="pcard-price">$148</span>
+              <button class="pcard-add" type="button">Add</button>
+            </div>
+          </div>
+
+          <!-- 2. Mono Mechanical Keyboard -->
+          <div class="pcard" data-id="om-mono-keyboard" data-brand="KeyLab" data-name="Mono Mechanical Keyboard" data-price="179" data-image="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish" type="button" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img">
+              <a href="product.html?slug=mono-mechanical-keyboard"><img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80" alt="Mono Mechanical Keyboard"></a>
+            </div>
+            <div class="pcard-brand">KeyLab</div>
+            <div class="pcard-name"><a href="product.html?slug=mono-mechanical-keyboard">Mono Mechanical Keyboard</a></div>
+            <div class="pcard-rating"><span class="stars">★★★★★</span> 4.8 (94)</div>
+            <div class="pcard-bottom">
+              <span class="pcard-price">$179</span>
+              <button class="pcard-add" type="button">Add</button>
+            </div>
+          </div>
+
+          <!-- 3. Field Carry Pouch -->
+          <div class="pcard" data-id="om-field-pouch" data-brand="Northline" data-name="Field Carry Pouch" data-price="72" data-image="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish" type="button" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img">
+              <a href="product.html?slug=field-carry-pouch"><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="Field Carry Pouch"></a>
+            </div>
+            <div class="pcard-brand">Northline</div>
+            <div class="pcard-name"><a href="product.html?slug=field-carry-pouch">Field Carry Pouch</a></div>
+            <div class="pcard-rating"><span class="stars">★★★★☆</span> 4.6 (62)</div>
+            <div class="pcard-bottom">
+              <span class="pcard-price">$72</span>
+              <button class="pcard-add" type="button">Add</button>
+            </div>
+          </div>
+
+          <!-- 4. Arc Wireless Speaker -->
+          <div class="pcard" data-id="om-arc-speaker" data-brand="Acoustic Lab" data-name="Arc Wireless Speaker" data-price="220" data-image="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish" type="button" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img">
+              <a href="product.html?slug=arc-wireless-speaker"><img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80" alt="Arc Wireless Speaker"></a>
+            </div>
+            <div class="pcard-brand">Acoustic Lab</div>
+            <div class="pcard-name"><a href="product.html?slug=arc-wireless-speaker">Arc Wireless Speaker</a></div>
+            <div class="pcard-rating"><span class="stars">★★★★★</span> 4.9 (184)</div>
+            <div class="pcard-bottom">
+              <span class="pcard-price">$220</span>
+              <button class="pcard-add" type="button">Add</button>
+            </div>
+          </div>
+
+          <!-- 5. Grid Organizer -->
+          <div class="pcard" data-id="om-grid-organizer" data-brand="Ferra Studio" data-name="Grid Organizer" data-price="58" data-image="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish" type="button" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img">
+              <a href="product.html?slug=grid-organizer"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Grid Organizer"></a>
+            </div>
+            <div class="pcard-brand">Ferra Studio</div>
+            <div class="pcard-name"><a href="product.html?slug=grid-organizer">Grid Organizer</a></div>
+            <div class="pcard-rating"><span class="stars">★★★★☆</span> 4.5 (88)</div>
+            <div class="pcard-bottom">
+              <span class="pcard-price">$58</span>
+              <button class="pcard-add" type="button">Add</button>
+            </div>
+          </div>
+
+          <!-- 6. Transit Bottle -->
+          <div class="pcard" data-id="om-transit-bottle" data-brand="Halcyon Goods" data-name="Transit Bottle" data-price="44" data-image="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish" type="button" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img">
+              <a href="product.html?slug=transit-bottle"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80" alt="Transit Bottle"></a>
+            </div>
+            <div class="pcard-brand">Halcyon Goods</div>
+            <div class="pcard-name"><a href="product.html?slug=transit-bottle">Transit Bottle</a></div>
+            <div class="pcard-rating"><span class="stars">★★★★★</span> 4.7 (110)</div>
+            <div class="pcard-bottom">
+              <span class="pcard-price">$44</span>
+              <button class="pcard-add" type="button">Add</button>
+            </div>
+          </div>
+
+          <!-- 7. Studio Headphones -->
+          <div class="pcard" data-id="om-studio-headphones" data-brand="Acoustic Lab" data-name="Studio Headphones" data-price="295" data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish" type="button" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img">
+              <a href="product.html?slug=studio-headphones"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Studio Headphones"></a>
+            </div>
+            <div class="pcard-brand">Acoustic Lab</div>
+            <div class="pcard-name"><a href="product.html?slug=studio-headphones">Studio Headphones</a></div>
+            <div class="pcard-rating"><span class="stars">★★★★★</span> 4.9 (240)</div>
+            <div class="pcard-bottom">
+              <span class="pcard-price">$295</span>
+              <button class="pcard-add" type="button">Add</button>
+            </div>
+          </div>
+
+          <!-- 8. Daily Cable Kit -->
+          <div class="pcard" data-id="om-cable-kit" data-brand="Ferra Studio" data-name="Daily Cable Kit" data-price="38" data-image="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish" type="button" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img">
+              <a href="product.html?slug=daily-cable-kit"><img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=600&q=80" alt="Daily Cable Kit"></a>
+            </div>
+            <div class="pcard-brand">Ferra Studio</div>
+            <div class="pcard-name"><a href="product.html?slug=daily-cable-kit">Daily Cable Kit</a></div>
+            <div class="pcard-rating"><span class="stars">★★★★☆</span> 4.4 (76)</div>
+            <div class="pcard-bottom">
+              <span class="pcard-price">$38</span>
+              <button class="pcard-add" type="button">Add</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 6. PRODUCT COLLECTION TWO: EVERYDAY ESSENTIALS (With Category Filter) -->
+      <section class="section">
+        <div class="section-head">
+          <h2>Everyday Essentials</h2>
+          <a href="shop.html" class="link">View all →</a>
+        </div>
+
+        <div class="tab-row" data-target="essentials-grid">
+          <button type="button" class="tab-btn active" data-cat="all">All</button>
+          <button type="button" class="tab-btn" data-cat="desk">Desk</button>
+          <button type="button" class="tab-btn" data-cat="tech">Tech</button>
+          <button type="button" class="tab-btn" data-cat="travel">Travel</button>
+          <button type="button" class="tab-btn" data-cat="home">Home</button>
+        </div>
+
+        <div class="pgrid" id="essentials-grid">
+          <!-- Item 1 (Desk) -->
+          <div class="pcard" data-cat="desk" data-id="ee-mat" data-brand="KeyLab" data-name="Wool Felt Desk Mat" data-price="48" data-image="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80" alt="Wool Felt Desk Mat"></div>
+            <div class="pcard-brand">KeyLab</div>
+            <div class="pcard-name">Wool Felt Desk Mat</div>
+            <div class="pcard-rating"><span class="stars">★★★★★</span> 4.8</div>
+            <div class="pcard-bottom"><span class="pcard-price">$48</span><button class="pcard-add">Add</button></div>
+          </div>
+
+          <!-- Item 2 (Tech) -->
+          <div class="pcard" data-cat="tech" data-id="ee-hub" data-brand="Ferra Studio" data-name="7-Port Aluminum USB-C Hub" data-price="79" data-image="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img"><img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=600&q=80" alt="USB-C Hub"></div>
+            <div class="pcard-brand">Ferra Studio</div>
+            <div class="pcard-name">7-Port Aluminum USB-C Hub</div>
+            <div class="pcard-rating"><span class="stars">★★★★☆</span> 4.5</div>
+            <div class="pcard-bottom"><span class="pcard-price">$79</span><button class="pcard-add">Add</button></div>
+          </div>
+
+          <!-- Item 3 (Travel) -->
+          <div class="pcard" data-cat="travel" data-id="ee-pack" data-brand="Northline" data-name="Commuter Technical Backpack" data-price="165" data-image="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img"><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="Backpack"></div>
+            <div class="pcard-brand">Northline</div>
+            <div class="pcard-name">Commuter Technical Backpack</div>
+            <div class="pcard-rating"><span class="stars">★★★★★</span> 4.9</div>
+            <div class="pcard-bottom"><span class="pcard-price">$165</span><button class="pcard-add">Add</button></div>
+          </div>
+
+          <!-- Item 4 (Home) -->
+          <div class="pcard" data-cat="home" data-id="ee-pourover" data-brand="Halcyon Goods" data-name="Ceramic Pour-Over Dripper" data-price="58" data-image="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Pour-over"></div>
+            <div class="pcard-brand">Halcyon Goods</div>
+            <div class="pcard-name">Ceramic Pour-Over Dripper</div>
+            <div class="pcard-rating"><span class="stars">★★★★☆</span> 4.7</div>
+            <div class="pcard-bottom"><span class="pcard-price">$58</span><button class="pcard-add">Add</button></div>
+          </div>
+
+          <!-- Item 5 (Desk) -->
+          <div class="pcard" data-cat="desk" data-id="ee-stand" data-brand="Ferra Studio" data-name="MagSafe Charging Stand" data-price="64" data-image="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img"><img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=600&q=80" alt="Charging Stand"></div>
+            <div class="pcard-brand">Ferra Studio</div>
+            <div class="pcard-name">MagSafe Charging Stand</div>
+            <div class="pcard-rating"><span class="stars">★★★★★</span> 4.8</div>
+            <div class="pcard-bottom"><span class="pcard-price">$64</span><button class="pcard-add">Add</button></div>
+          </div>
+
+          <!-- Item 6 (Tech) -->
+          <div class="pcard" data-cat="tech" data-id="ee-buds" data-brand="Acoustic Lab" data-name="True Wireless Earbuds" data-price="159" data-image="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img"><img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80" alt="Earbuds"></div>
+            <div class="pcard-brand">Acoustic Lab</div>
+            <div class="pcard-name">True Wireless Earbuds</div>
+            <div class="pcard-rating"><span class="stars">★★★★☆</span> 4.6</div>
+            <div class="pcard-bottom"><span class="pcard-price">$159</span><button class="pcard-add">Add</button></div>
+          </div>
+
+          <!-- Item 7 (Travel) -->
+          <div class="pcard" data-cat="travel" data-id="ee-tag" data-brand="Northline" data-name="Leather Passport Cover" data-price="42" data-image="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Passport Cover"></div>
+            <div class="pcard-brand">Northline</div>
+            <div class="pcard-name">Leather Passport Cover</div>
+            <div class="pcard-rating"><span class="stars">★★★★★</span> 4.9</div>
+            <div class="pcard-bottom"><span class="pcard-price">$42</span><button class="pcard-add">Add</button></div>
+          </div>
+
+          <!-- Item 8 (Home) -->
+          <div class="pcard" data-cat="home" data-id="ee-clock" data-brand="Kiln &amp; Co" data-name="Minimalist Desk Clock" data-price="68" data-image="https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=80">
+            <button class="pcard-wish"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-8.8C.7 8.6 2.6 5 6 5c2 0 3.3 1 4 2.3C10.7 6 12 5 14 5c3.4 0 5.3 3.6 3.5 7.2C19 16.6 12 21 12 21z"/></svg></button>
+            <div class="pcard-img"><img src="https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=80" alt="Desk Clock"></div>
+            <div class="pcard-brand">Kiln &amp; Co</div>
+            <div class="pcard-name">Minimalist Desk Clock</div>
+            <div class="pcard-rating"><span class="stars">★★★★☆</span> 4.6</div>
+            <div class="pcard-bottom"><span class="pcard-price">$68</span><button class="pcard-add">Add</button></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- 7. FOOTER (4-Column Functional) -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">OBJECT<span>MARKET</span></div>
+          <p class="tag">A curated marketplace for modern tools, technology and functional design objects.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="shop.html?cat=new">New Arrivals</a>
+          <a href="categories.html">Categories</a>
+          <a href="shop.html?cat=best">Best Sellers</a>
+          <a href="brand.html">Brands</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer</h4>
+          <a href="contact.html">Contact</a>
+          <a href="shipping.html">Shipping</a>
+          <a href="returns.html">Returns</a>
+          <a href="faq.html">FAQ</a>
+          <a href="account.html">Track Order</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>About</h4>
+          <a href="about.html">Our Story</a>
+          <a href="journal.html">Journal</a>
+          <a href="about.html#careers">Careers</a>
+          <a href="stores.html">Stores</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 OBJECT MARKET INC. ALL RIGHTS RESERVED.</span>
+        <div>
+          <span>United States (USD $) &nbsp;·&nbsp; </span>
+          <a href="privacy.html" style="color:inherit;">Privacy</a> &nbsp;·&nbsp;
+          <a href="terms.html" style="color:inherit;">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

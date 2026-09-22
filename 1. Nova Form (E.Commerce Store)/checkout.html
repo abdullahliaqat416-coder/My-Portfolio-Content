@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — NOVA FORM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Architectural Left-Side Spine (Fixed Rail) -->
+  <aside class="side-spine" aria-label="Atelier Navigation Spine">
+    <div class="spine-top">
+      <a href="index.html" class="spine-logo-mark" aria-label="Nova Form Home">N</a>
+      <div class="spine-3d-badge">3D ON</div>
+    </div>
+    <div class="spine-center">
+      <span class="spine-tagline">NOVA FORM <span>•</span> ARCHITECTURAL ATELIER</span>
+    </div>
+    <div class="spine-bottom">
+      <div class="spine-progress-wrap">
+        <div class="spine-progress-bar"></div>
+      </div>
+      <span class="spine-milestone">01 / 06</span>
+    </div>
+  </aside>
+
+  <!-- Distraction-free Checkout Header -->
+  <header class="checkout-header">
+    <div class="wrap">
+      <a href="index.html" class="logo">NOVA FORM</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="checkout-layout">
+      <!-- Left Column: Multi-step Form -->
+      <div>
+        <div class="checkout-steps">
+          <span class="checkout-step completed">1. Information ✓</span>
+          <span class="checkout-step active">2. Shipping &amp; Delivery</span>
+          <span class="checkout-step">3. Payment</span>
+        </div>
+
+        <form id="checkout-form" onsubmit="event.preventDefault(); alert('Order placed successfully! Thank you for shopping with NOVA FORM.'); localStorage.removeItem('nova_form_cart_v1'); window.location.href='index.html';">
+          <!-- Step 1: Contact -->
+          <div class="checkout-form-section">
+            <h3>Contact Information</h3>
+            <div class="form-grid full">
+              <div class="form-field">
+                <label for="c-email">Email Address</label>
+                <input type="email" id="c-email" placeholder="you@domain.com" required value="kaif@example.com">
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="c-fname">First Name</label>
+                <input type="text" id="c-fname" placeholder="First Name" required value="Kaif">
+              </div>
+              <div class="form-field">
+                <label for="c-lname">Last Name</label>
+                <input type="text" id="c-lname" placeholder="Last Name" required value="Customer">
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Shipping -->
+          <div class="checkout-form-section">
+            <h3>Shipping Address</h3>
+            <div class="form-grid full">
+              <div class="form-field">
+                <label for="c-address">Street Address</label>
+                <input type="text" id="c-address" placeholder="123 Studio Boulevard, Suite 400" required value="123 Studio Boulevard">
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="c-city">City</label>
+                <input type="text" id="c-city" placeholder="City" required value="New York">
+              </div>
+              <div class="form-field">
+                <label for="c-postal">Postal Code</label>
+                <input type="text" id="c-postal" placeholder="Postal Code" required value="10001">
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="c-country">Country</label>
+                <select id="c-country">
+                  <option>United States</option>
+                  <option>United Kingdom</option>
+                  <option>Canada</option>
+                  <option>France</option>
+                  <option>Germany</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="c-phone">Phone Number</label>
+                <input type="tel" id="c-phone" placeholder="+1 (555) 000-0000" required value="+1 (555) 234-5678">
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Payment -->
+          <div class="checkout-form-section">
+            <h3>Payment Method</h3>
+            <div class="form-grid full">
+              <div class="form-field">
+                <label for="c-card">Card Number</label>
+                <input type="text" id="c-card" placeholder="4242 •••• •••• 4242" required value="4242 4242 4242 4242">
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="c-exp">Expiry (MM/YY)</label>
+                <input type="text" id="c-exp" placeholder="12/28" required value="12/28">
+              </div>
+              <div class="form-field">
+                <label for="c-cvc">Security Code (CVC)</label>
+                <input type="text" id="c-cvc" placeholder="382" required value="382">
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-dark" style="width:100%; padding:18px; font-size:13px;">Complete Order</button>
+        </form>
+      </div>
+
+      <!-- Right Column: Order Summary -->
+      <div class="checkout-summary-box">
+        <h3>Summary</h3>
+        <div id="checkout-items-list" style="margin-bottom: 24px;">
+          <!-- Populated via script -->
+        </div>
+
+        <div class="sum-row">
+          <span>Subtotal</span>
+          <span id="co-subtotal">$189.00</span>
+        </div>
+        <div class="sum-row">
+          <span>Shipping (Express)</span>
+          <span id="co-shipping">Complimentary</span>
+        </div>
+        <div class="sum-row">
+          <span>Estimated Taxes</span>
+          <span>$15.12</span>
+        </div>
+        <div class="sum-row total">
+          <span>Total</span>
+          <span id="co-total">$204.12</span>
+        </div>
+
+        <div style="margin-top: 24px; font-size: 12px; color: var(--taupe); line-height: 1.5;">
+          🔒 All transactions are secure and encrypted. Carbon-neutral delivery included on all studio shipments.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cart = JSON.parse(localStorage.getItem('nova_form_cart_v1')) || [
+        { name: 'Form Wool Overshirt', size: 'S', price: 189, qty: 1, image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=300&q=80' }
+      ];
+      const list = document.getElementById('checkout-items-list');
+      const subtotalEl = document.getElementById('co-subtotal');
+      const totalEl = document.getElementById('co-total');
+
+      if (list && cart.length > 0) {
+        list.innerHTML = cart.map(item => `
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; font-size:13.5px;">
+            <div style="display:flex; align-items:center; gap:12px;">
+              <img src="${item.image}" style="width:48px; height:56px; object-fit:cover;">
+              <div>
+                <div style="font-weight:500;">${item.name}</div>
+                <div style="font-size:11.5px; color:var(--taupe);">Size: ${item.size} × ${item.qty}</div>
+              </div>
+            </div>
+            <div style="font-weight:600;">$${(item.price * item.qty).toFixed(2)}</div>
+          </div>
+        `).join('');
+
+        const subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+        const taxes = subtotal * 0.08;
+        const total = subtotal + taxes;
+        if (subtotalEl) subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+        if (totalEl) totalEl.textContent = `$${total.toFixed(2)}`;
+      }
+    });
+  </script>
+</body>
+</html>
